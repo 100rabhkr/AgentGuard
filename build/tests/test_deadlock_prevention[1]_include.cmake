@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention[1]_tests.cmake")
+else()
+  add_test(test_deadlock_prevention_NOT_BUILT test_deadlock_prevention_NOT_BUILT)
+endif()

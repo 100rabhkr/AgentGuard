@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/saurabhkumar/Downloads/c++/build/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/src/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/tests/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/_deps/googletest-build/googletest/cmake_install.cmake",
+		"/Users/saurabhkumar/Downloads/c++/build/examples/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

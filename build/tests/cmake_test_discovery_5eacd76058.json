@@ -1,0 +1,117 @@
+{
+  "tests": 21,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "SafetyCheckerTest",
+      "tests": 21,
+      "testsuite": [
+        {
+          "name": "SimpleSafeState_TwoAgentsOneResource",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 41
+        },
+        {
+          "name": "UnsafeState_TwoAgentsOneResource",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 59
+        },
+        {
+          "name": "EmptySystemIsSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 77
+        },
+        {
+          "name": "SingleAgentSafeWhenResourcesSuffice",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 92
+        },
+        {
+          "name": "SingleAgentSafeAvailableExceedsNeed",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 103
+        },
+        {
+          "name": "ClassicTextbookExample_ThreeAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 115
+        },
+        {
+          "name": "ClassicTextbookExample_UnsafeVariant",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 142
+        },
+        {
+          "name": "MultiResource_Safe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 162
+        },
+        {
+          "name": "MultiResource_Unsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 187
+        },
+        {
+          "name": "HypotheticalSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 213
+        },
+        {
+          "name": "HypotheticalUnsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 232
+        },
+        {
+          "name": "HypotheticalGrantOneUnitStillSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 246
+        },
+        {
+          "name": "FindGrantableRequests",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 261
+        },
+        {
+          "name": "FindGrantableRequests_SomeUnsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 312
+        },
+        {
+          "name": "IdentifyBottleneckAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 348
+        },
+        {
+          "name": "IdentifyBottleneckAgents_EmptySystem",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 367
+        },
+        {
+          "name": "AgentWithZeroNeedIsSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 380
+        },
+        {
+          "name": "AllResourcesAllocatedButAllAgentsSatisfied",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 389
+        },
+        {
+          "name": "ManyAgentsSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 402
+        },
+        {
+          "name": "HypotheticalBatchSafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 416
+        },
+        {
+          "name": "HypotheticalBatchUnsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_safety_checker.cpp",
+          "line": 448
+        }
+      ]
+    }
+  ]
+}

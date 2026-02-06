@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents[1]_tests.cmake")
+else()
+  add_test(test_concurrent_agents_NOT_BUILT test_concurrent_agents_NOT_BUILT)
+endif()

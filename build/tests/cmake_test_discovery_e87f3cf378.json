@@ -1,0 +1,72 @@
+{
+  "tests": 12,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ResourceTest",
+      "tests": 12,
+      "testsuite": [
+        {
+          "name": "ConstructionAndGetters",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 11
+        },
+        {
+          "name": "ConstructionWithDifferentCategories",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 22
+        },
+        {
+          "name": "InitialAvailableEqualsCapacity",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 38
+        },
+        {
+          "name": "SetTotalCapacityIncrease",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 48
+        },
+        {
+          "name": "SetTotalCapacityDecreaseAboveAllocated",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 55
+        },
+        {
+          "name": "SetTotalCapacityToZeroWhenNothingAllocated",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 63
+        },
+        {
+          "name": "ReplenishIntervalDefaultIsNullopt",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 74
+        },
+        {
+          "name": "SetAndGetReplenishInterval",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 79
+        },
+        {
+          "name": "CostPerUnitDefaultIsNullopt",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 86
+        },
+        {
+          "name": "SetAndGetCostPerUnit",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 91
+        },
+        {
+          "name": "AllocationThroughResourceManager",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 103
+        },
+        {
+          "name": "DeallocationThroughResourceManager",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource.cpp",
+          "line": 126
+        }
+      ]
+    }
+  ]
+}

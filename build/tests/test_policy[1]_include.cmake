@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_policy[1]_tests.cmake")
+else()
+  add_test(test_policy_NOT_BUILT test_policy_NOT_BUILT)
+endif()

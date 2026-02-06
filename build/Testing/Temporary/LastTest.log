@@ -1,0 +1,2946 @@
+Start testing: Feb 07 03:06 IST
+----------------------------------------------------------
+1/109 Testing: ResourceTest.ConstructionAndGetters
+1/109 Test: ResourceTest.ConstructionAndGetters
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.ConstructionAndGetters" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.ConstructionAndGetters" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.ConstructionAndGetters
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.ConstructionAndGetters
+[       OK ] ResourceTest.ConstructionAndGetters (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.ConstructionAndGetters" end time: Feb 07 03:06 IST
+"ResourceTest.ConstructionAndGetters" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/109 Testing: ResourceTest.ConstructionWithDifferentCategories
+2/109 Test: ResourceTest.ConstructionWithDifferentCategories
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.ConstructionWithDifferentCategories" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.ConstructionWithDifferentCategories" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.ConstructionWithDifferentCategories
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.ConstructionWithDifferentCategories
+[       OK ] ResourceTest.ConstructionWithDifferentCategories (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.ConstructionWithDifferentCategories" end time: Feb 07 03:06 IST
+"ResourceTest.ConstructionWithDifferentCategories" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/109 Testing: ResourceTest.InitialAvailableEqualsCapacity
+3/109 Test: ResourceTest.InitialAvailableEqualsCapacity
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.InitialAvailableEqualsCapacity" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.InitialAvailableEqualsCapacity" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.InitialAvailableEqualsCapacity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.InitialAvailableEqualsCapacity
+[       OK ] ResourceTest.InitialAvailableEqualsCapacity (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.InitialAvailableEqualsCapacity" end time: Feb 07 03:06 IST
+"ResourceTest.InitialAvailableEqualsCapacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/109 Testing: ResourceTest.SetTotalCapacityIncrease
+4/109 Test: ResourceTest.SetTotalCapacityIncrease
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.SetTotalCapacityIncrease" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.SetTotalCapacityIncrease" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.SetTotalCapacityIncrease
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.SetTotalCapacityIncrease
+[       OK ] ResourceTest.SetTotalCapacityIncrease (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.SetTotalCapacityIncrease" end time: Feb 07 03:06 IST
+"ResourceTest.SetTotalCapacityIncrease" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/109 Testing: ResourceTest.SetTotalCapacityDecreaseAboveAllocated
+5/109 Test: ResourceTest.SetTotalCapacityDecreaseAboveAllocated
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.SetTotalCapacityDecreaseAboveAllocated" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.SetTotalCapacityDecreaseAboveAllocated" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.SetTotalCapacityDecreaseAboveAllocated
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.SetTotalCapacityDecreaseAboveAllocated
+[       OK ] ResourceTest.SetTotalCapacityDecreaseAboveAllocated (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.SetTotalCapacityDecreaseAboveAllocated" end time: Feb 07 03:06 IST
+"ResourceTest.SetTotalCapacityDecreaseAboveAllocated" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/109 Testing: ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated
+6/109 Test: ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated
+[       OK ] ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated" end time: Feb 07 03:06 IST
+"ResourceTest.SetTotalCapacityToZeroWhenNothingAllocated" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/109 Testing: ResourceTest.ReplenishIntervalDefaultIsNullopt
+7/109 Test: ResourceTest.ReplenishIntervalDefaultIsNullopt
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.ReplenishIntervalDefaultIsNullopt" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.ReplenishIntervalDefaultIsNullopt" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.ReplenishIntervalDefaultIsNullopt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.ReplenishIntervalDefaultIsNullopt
+[       OK ] ResourceTest.ReplenishIntervalDefaultIsNullopt (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.ReplenishIntervalDefaultIsNullopt" end time: Feb 07 03:06 IST
+"ResourceTest.ReplenishIntervalDefaultIsNullopt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/109 Testing: ResourceTest.SetAndGetReplenishInterval
+8/109 Test: ResourceTest.SetAndGetReplenishInterval
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.SetAndGetReplenishInterval" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.SetAndGetReplenishInterval" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.SetAndGetReplenishInterval
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.SetAndGetReplenishInterval
+[       OK ] ResourceTest.SetAndGetReplenishInterval (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.SetAndGetReplenishInterval" end time: Feb 07 03:06 IST
+"ResourceTest.SetAndGetReplenishInterval" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/109 Testing: ResourceTest.CostPerUnitDefaultIsNullopt
+9/109 Test: ResourceTest.CostPerUnitDefaultIsNullopt
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.CostPerUnitDefaultIsNullopt" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.CostPerUnitDefaultIsNullopt" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.CostPerUnitDefaultIsNullopt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.CostPerUnitDefaultIsNullopt
+[       OK ] ResourceTest.CostPerUnitDefaultIsNullopt (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.CostPerUnitDefaultIsNullopt" end time: Feb 07 03:06 IST
+"ResourceTest.CostPerUnitDefaultIsNullopt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/109 Testing: ResourceTest.SetAndGetCostPerUnit
+10/109 Test: ResourceTest.SetAndGetCostPerUnit
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.SetAndGetCostPerUnit" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.SetAndGetCostPerUnit" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.SetAndGetCostPerUnit
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.SetAndGetCostPerUnit
+[       OK ] ResourceTest.SetAndGetCostPerUnit (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.SetAndGetCostPerUnit" end time: Feb 07 03:06 IST
+"ResourceTest.SetAndGetCostPerUnit" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/109 Testing: ResourceTest.AllocationThroughResourceManager
+11/109 Test: ResourceTest.AllocationThroughResourceManager
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.AllocationThroughResourceManager" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.AllocationThroughResourceManager" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.AllocationThroughResourceManager
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.AllocationThroughResourceManager
+[       OK ] ResourceTest.AllocationThroughResourceManager (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.AllocationThroughResourceManager" end time: Feb 07 03:06 IST
+"ResourceTest.AllocationThroughResourceManager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/109 Testing: ResourceTest.DeallocationThroughResourceManager
+12/109 Test: ResourceTest.DeallocationThroughResourceManager
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource" "--gtest_filter=ResourceTest.DeallocationThroughResourceManager" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceTest.DeallocationThroughResourceManager" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceTest.DeallocationThroughResourceManager
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceTest
+[ RUN      ] ResourceTest.DeallocationThroughResourceManager
+[       OK ] ResourceTest.DeallocationThroughResourceManager (0 ms)
+[----------] 1 test from ResourceTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceTest.DeallocationThroughResourceManager" end time: Feb 07 03:06 IST
+"ResourceTest.DeallocationThroughResourceManager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/109 Testing: AgentTest.ConstructionWithDefaults
+13/109 Test: AgentTest.ConstructionWithDefaults
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.ConstructionWithDefaults" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.ConstructionWithDefaults" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.ConstructionWithDefaults
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.ConstructionWithDefaults
+[       OK ] AgentTest.ConstructionWithDefaults (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.ConstructionWithDefaults" end time: Feb 07 03:06 IST
+"AgentTest.ConstructionWithDefaults" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/109 Testing: AgentTest.ConstructionWithCustomPriority
+14/109 Test: AgentTest.ConstructionWithCustomPriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.ConstructionWithCustomPriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.ConstructionWithCustomPriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.ConstructionWithCustomPriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.ConstructionWithCustomPriority
+[       OK ] AgentTest.ConstructionWithCustomPriority (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.ConstructionWithCustomPriority" end time: Feb 07 03:06 IST
+"AgentTest.ConstructionWithCustomPriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/109 Testing: AgentTest.ConstructionWithLowPriority
+15/109 Test: AgentTest.ConstructionWithLowPriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.ConstructionWithLowPriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.ConstructionWithLowPriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.ConstructionWithLowPriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.ConstructionWithLowPriority
+[       OK ] AgentTest.ConstructionWithLowPriority (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.ConstructionWithLowPriority" end time: Feb 07 03:06 IST
+"AgentTest.ConstructionWithLowPriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/109 Testing: AgentTest.SetPriority
+16/109 Test: AgentTest.SetPriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.SetPriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.SetPriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.SetPriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.SetPriority
+[       OK ] AgentTest.SetPriority (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.SetPriority" end time: Feb 07 03:06 IST
+"AgentTest.SetPriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/109 Testing: AgentTest.DeclareMaxNeedSingle
+17/109 Test: AgentTest.DeclareMaxNeedSingle
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.DeclareMaxNeedSingle" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.DeclareMaxNeedSingle" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.DeclareMaxNeedSingle
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.DeclareMaxNeedSingle
+[       OK ] AgentTest.DeclareMaxNeedSingle (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.DeclareMaxNeedSingle" end time: Feb 07 03:06 IST
+"AgentTest.DeclareMaxNeedSingle" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/109 Testing: AgentTest.DeclareMaxNeedMultiple
+18/109 Test: AgentTest.DeclareMaxNeedMultiple
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.DeclareMaxNeedMultiple" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.DeclareMaxNeedMultiple" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.DeclareMaxNeedMultiple
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.DeclareMaxNeedMultiple
+[       OK ] AgentTest.DeclareMaxNeedMultiple (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.DeclareMaxNeedMultiple" end time: Feb 07 03:06 IST
+"AgentTest.DeclareMaxNeedMultiple" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/109 Testing: AgentTest.DeclareMaxNeedOverwrite
+19/109 Test: AgentTest.DeclareMaxNeedOverwrite
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.DeclareMaxNeedOverwrite" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.DeclareMaxNeedOverwrite" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.DeclareMaxNeedOverwrite
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.DeclareMaxNeedOverwrite
+[       OK ] AgentTest.DeclareMaxNeedOverwrite (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.DeclareMaxNeedOverwrite" end time: Feb 07 03:06 IST
+"AgentTest.DeclareMaxNeedOverwrite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/109 Testing: AgentTest.RemainingNeedNoAllocation
+20/109 Test: AgentTest.RemainingNeedNoAllocation
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.RemainingNeedNoAllocation" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.RemainingNeedNoAllocation" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.RemainingNeedNoAllocation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.RemainingNeedNoAllocation
+[       OK ] AgentTest.RemainingNeedNoAllocation (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.RemainingNeedNoAllocation" end time: Feb 07 03:06 IST
+"AgentTest.RemainingNeedNoAllocation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/109 Testing: AgentTest.RemainingNeedAfterAllocationThroughManager
+21/109 Test: AgentTest.RemainingNeedAfterAllocationThroughManager
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.RemainingNeedAfterAllocationThroughManager" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.RemainingNeedAfterAllocationThroughManager" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.RemainingNeedAfterAllocationThroughManager
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.RemainingNeedAfterAllocationThroughManager
+[       OK ] AgentTest.RemainingNeedAfterAllocationThroughManager (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.RemainingNeedAfterAllocationThroughManager" end time: Feb 07 03:06 IST
+"AgentTest.RemainingNeedAfterAllocationThroughManager" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/109 Testing: AgentTest.RemainingNeedUndeclaredResourceReturnsZero
+22/109 Test: AgentTest.RemainingNeedUndeclaredResourceReturnsZero
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.RemainingNeedUndeclaredResourceReturnsZero" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.RemainingNeedUndeclaredResourceReturnsZero" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.RemainingNeedUndeclaredResourceReturnsZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.RemainingNeedUndeclaredResourceReturnsZero
+[       OK ] AgentTest.RemainingNeedUndeclaredResourceReturnsZero (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.RemainingNeedUndeclaredResourceReturnsZero" end time: Feb 07 03:06 IST
+"AgentTest.RemainingNeedUndeclaredResourceReturnsZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/109 Testing: AgentTest.CurrentAllocationInitiallyEmpty
+23/109 Test: AgentTest.CurrentAllocationInitiallyEmpty
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.CurrentAllocationInitiallyEmpty" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.CurrentAllocationInitiallyEmpty" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.CurrentAllocationInitiallyEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.CurrentAllocationInitiallyEmpty
+[       OK ] AgentTest.CurrentAllocationInitiallyEmpty (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.CurrentAllocationInitiallyEmpty" end time: Feb 07 03:06 IST
+"AgentTest.CurrentAllocationInitiallyEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/109 Testing: AgentTest.ModelIdentifierDefault
+24/109 Test: AgentTest.ModelIdentifierDefault
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.ModelIdentifierDefault" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.ModelIdentifierDefault" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.ModelIdentifierDefault
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.ModelIdentifierDefault
+[       OK ] AgentTest.ModelIdentifierDefault (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.ModelIdentifierDefault" end time: Feb 07 03:06 IST
+"AgentTest.ModelIdentifierDefault" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/109 Testing: AgentTest.SetAndGetModelIdentifier
+25/109 Test: AgentTest.SetAndGetModelIdentifier
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.SetAndGetModelIdentifier" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.SetAndGetModelIdentifier" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.SetAndGetModelIdentifier
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.SetAndGetModelIdentifier
+[       OK ] AgentTest.SetAndGetModelIdentifier (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.SetAndGetModelIdentifier" end time: Feb 07 03:06 IST
+"AgentTest.SetAndGetModelIdentifier" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/109 Testing: AgentTest.TaskDescriptionDefault
+26/109 Test: AgentTest.TaskDescriptionDefault
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.TaskDescriptionDefault" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.TaskDescriptionDefault" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.TaskDescriptionDefault
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.TaskDescriptionDefault
+[       OK ] AgentTest.TaskDescriptionDefault (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.TaskDescriptionDefault" end time: Feb 07 03:06 IST
+"AgentTest.TaskDescriptionDefault" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/109 Testing: AgentTest.SetAndGetTaskDescription
+27/109 Test: AgentTest.SetAndGetTaskDescription
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.SetAndGetTaskDescription" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.SetAndGetTaskDescription" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.SetAndGetTaskDescription
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.SetAndGetTaskDescription
+[       OK ] AgentTest.SetAndGetTaskDescription (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.SetAndGetTaskDescription" end time: Feb 07 03:06 IST
+"AgentTest.SetAndGetTaskDescription" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/109 Testing: AgentTest.OverwriteMetadata
+28/109 Test: AgentTest.OverwriteMetadata
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.OverwriteMetadata" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.OverwriteMetadata" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.OverwriteMetadata
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.OverwriteMetadata
+[       OK ] AgentTest.OverwriteMetadata (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.OverwriteMetadata" end time: Feb 07 03:06 IST
+"AgentTest.OverwriteMetadata" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/109 Testing: AgentTest.InitialStateIsRegistered
+29/109 Test: AgentTest.InitialStateIsRegistered
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_agent" "--gtest_filter=AgentTest.InitialStateIsRegistered" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"AgentTest.InitialStateIsRegistered" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = AgentTest.InitialStateIsRegistered
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from AgentTest
+[ RUN      ] AgentTest.InitialStateIsRegistered
+[       OK ] AgentTest.InitialStateIsRegistered (0 ms)
+[----------] 1 test from AgentTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"AgentTest.InitialStateIsRegistered" end time: Feb 07 03:06 IST
+"AgentTest.InitialStateIsRegistered" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/109 Testing: SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource
+30/109 Test: SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource
+[       OK ] SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.SimpleSafeState_TwoAgentsOneResource" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/109 Testing: SafetyCheckerTest.UnsafeState_TwoAgentsOneResource
+31/109 Test: SafetyCheckerTest.UnsafeState_TwoAgentsOneResource
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.UnsafeState_TwoAgentsOneResource" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.UnsafeState_TwoAgentsOneResource" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.UnsafeState_TwoAgentsOneResource
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.UnsafeState_TwoAgentsOneResource
+[       OK ] SafetyCheckerTest.UnsafeState_TwoAgentsOneResource (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.UnsafeState_TwoAgentsOneResource" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.UnsafeState_TwoAgentsOneResource" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/109 Testing: SafetyCheckerTest.EmptySystemIsSafe
+32/109 Test: SafetyCheckerTest.EmptySystemIsSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.EmptySystemIsSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.EmptySystemIsSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.EmptySystemIsSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.EmptySystemIsSafe
+[       OK ] SafetyCheckerTest.EmptySystemIsSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.EmptySystemIsSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.EmptySystemIsSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/109 Testing: SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice
+33/109 Test: SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice
+[       OK ] SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.SingleAgentSafeWhenResourcesSuffice" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/109 Testing: SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed
+34/109 Test: SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed
+[       OK ] SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.SingleAgentSafeAvailableExceedsNeed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/109 Testing: SafetyCheckerTest.ClassicTextbookExample_ThreeAgents
+35/109 Test: SafetyCheckerTest.ClassicTextbookExample_ThreeAgents
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.ClassicTextbookExample_ThreeAgents" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.ClassicTextbookExample_ThreeAgents" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.ClassicTextbookExample_ThreeAgents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.ClassicTextbookExample_ThreeAgents
+[       OK ] SafetyCheckerTest.ClassicTextbookExample_ThreeAgents (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.ClassicTextbookExample_ThreeAgents" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.ClassicTextbookExample_ThreeAgents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/109 Testing: SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant
+36/109 Test: SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant
+[       OK ] SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.ClassicTextbookExample_UnsafeVariant" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/109 Testing: SafetyCheckerTest.MultiResource_Safe
+37/109 Test: SafetyCheckerTest.MultiResource_Safe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.MultiResource_Safe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.MultiResource_Safe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.MultiResource_Safe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.MultiResource_Safe
+[       OK ] SafetyCheckerTest.MultiResource_Safe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.MultiResource_Safe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.MultiResource_Safe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/109 Testing: SafetyCheckerTest.MultiResource_Unsafe
+38/109 Test: SafetyCheckerTest.MultiResource_Unsafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.MultiResource_Unsafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.MultiResource_Unsafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.MultiResource_Unsafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.MultiResource_Unsafe
+[       OK ] SafetyCheckerTest.MultiResource_Unsafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.MultiResource_Unsafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.MultiResource_Unsafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/109 Testing: SafetyCheckerTest.HypotheticalSafe
+39/109 Test: SafetyCheckerTest.HypotheticalSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.HypotheticalSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.HypotheticalSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.HypotheticalSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.HypotheticalSafe
+[       OK ] SafetyCheckerTest.HypotheticalSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.HypotheticalSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.HypotheticalSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/109 Testing: SafetyCheckerTest.HypotheticalUnsafe
+40/109 Test: SafetyCheckerTest.HypotheticalUnsafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.HypotheticalUnsafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.HypotheticalUnsafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.HypotheticalUnsafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.HypotheticalUnsafe
+[       OK ] SafetyCheckerTest.HypotheticalUnsafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.HypotheticalUnsafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.HypotheticalUnsafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/109 Testing: SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe
+41/109 Test: SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe
+[       OK ] SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.HypotheticalGrantOneUnitStillSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/109 Testing: SafetyCheckerTest.FindGrantableRequests
+42/109 Test: SafetyCheckerTest.FindGrantableRequests
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.FindGrantableRequests" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.FindGrantableRequests" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.FindGrantableRequests
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.FindGrantableRequests
+[       OK ] SafetyCheckerTest.FindGrantableRequests (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.FindGrantableRequests" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.FindGrantableRequests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/109 Testing: SafetyCheckerTest.FindGrantableRequests_SomeUnsafe
+43/109 Test: SafetyCheckerTest.FindGrantableRequests_SomeUnsafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.FindGrantableRequests_SomeUnsafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.FindGrantableRequests_SomeUnsafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.FindGrantableRequests_SomeUnsafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.FindGrantableRequests_SomeUnsafe
+[       OK ] SafetyCheckerTest.FindGrantableRequests_SomeUnsafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.FindGrantableRequests_SomeUnsafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.FindGrantableRequests_SomeUnsafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/109 Testing: SafetyCheckerTest.IdentifyBottleneckAgents
+44/109 Test: SafetyCheckerTest.IdentifyBottleneckAgents
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.IdentifyBottleneckAgents" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.IdentifyBottleneckAgents" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.IdentifyBottleneckAgents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.IdentifyBottleneckAgents
+[       OK ] SafetyCheckerTest.IdentifyBottleneckAgents (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.IdentifyBottleneckAgents" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.IdentifyBottleneckAgents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/109 Testing: SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem
+45/109 Test: SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem
+[       OK ] SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.IdentifyBottleneckAgents_EmptySystem" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/109 Testing: SafetyCheckerTest.AgentWithZeroNeedIsSafe
+46/109 Test: SafetyCheckerTest.AgentWithZeroNeedIsSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.AgentWithZeroNeedIsSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.AgentWithZeroNeedIsSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.AgentWithZeroNeedIsSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.AgentWithZeroNeedIsSafe
+[       OK ] SafetyCheckerTest.AgentWithZeroNeedIsSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.AgentWithZeroNeedIsSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.AgentWithZeroNeedIsSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/109 Testing: SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied
+47/109 Test: SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied
+[       OK ] SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.AllResourcesAllocatedButAllAgentsSatisfied" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/109 Testing: SafetyCheckerTest.ManyAgentsSafe
+48/109 Test: SafetyCheckerTest.ManyAgentsSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.ManyAgentsSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.ManyAgentsSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.ManyAgentsSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.ManyAgentsSafe
+[       OK ] SafetyCheckerTest.ManyAgentsSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.ManyAgentsSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.ManyAgentsSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/109 Testing: SafetyCheckerTest.HypotheticalBatchSafe
+49/109 Test: SafetyCheckerTest.HypotheticalBatchSafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.HypotheticalBatchSafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.HypotheticalBatchSafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.HypotheticalBatchSafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.HypotheticalBatchSafe
+[       OK ] SafetyCheckerTest.HypotheticalBatchSafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.HypotheticalBatchSafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.HypotheticalBatchSafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/109 Testing: SafetyCheckerTest.HypotheticalBatchUnsafe
+50/109 Test: SafetyCheckerTest.HypotheticalBatchUnsafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_safety_checker" "--gtest_filter=SafetyCheckerTest.HypotheticalBatchUnsafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"SafetyCheckerTest.HypotheticalBatchUnsafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = SafetyCheckerTest.HypotheticalBatchUnsafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SafetyCheckerTest
+[ RUN      ] SafetyCheckerTest.HypotheticalBatchUnsafe
+[       OK ] SafetyCheckerTest.HypotheticalBatchUnsafe (0 ms)
+[----------] 1 test from SafetyCheckerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SafetyCheckerTest.HypotheticalBatchUnsafe" end time: Feb 07 03:06 IST
+"SafetyCheckerTest.HypotheticalBatchUnsafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/109 Testing: ResourceManagerTest.RegisterAndQueryResource
+51/109 Test: ResourceManagerTest.RegisterAndQueryResource
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RegisterAndQueryResource" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RegisterAndQueryResource" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RegisterAndQueryResource
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RegisterAndQueryResource
+[       OK ] ResourceManagerTest.RegisterAndQueryResource (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RegisterAndQueryResource" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RegisterAndQueryResource" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/109 Testing: ResourceManagerTest.QueryNonexistentResourceReturnsNullopt
+52/109 Test: ResourceManagerTest.QueryNonexistentResourceReturnsNullopt
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.QueryNonexistentResourceReturnsNullopt" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.QueryNonexistentResourceReturnsNullopt" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.QueryNonexistentResourceReturnsNullopt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.QueryNonexistentResourceReturnsNullopt
+[       OK ] ResourceManagerTest.QueryNonexistentResourceReturnsNullopt (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.QueryNonexistentResourceReturnsNullopt" end time: Feb 07 03:06 IST
+"ResourceManagerTest.QueryNonexistentResourceReturnsNullopt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/109 Testing: ResourceManagerTest.RegisterMultipleResources
+53/109 Test: ResourceManagerTest.RegisterMultipleResources
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RegisterMultipleResources" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RegisterMultipleResources" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RegisterMultipleResources
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RegisterMultipleResources
+[       OK ] ResourceManagerTest.RegisterMultipleResources (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RegisterMultipleResources" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RegisterMultipleResources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/109 Testing: ResourceManagerTest.UnregisterResource
+54/109 Test: ResourceManagerTest.UnregisterResource
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.UnregisterResource" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.UnregisterResource" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.UnregisterResource
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.UnregisterResource
+[       OK ] ResourceManagerTest.UnregisterResource (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.UnregisterResource" end time: Feb 07 03:06 IST
+"ResourceManagerTest.UnregisterResource" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/109 Testing: ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse
+55/109 Test: ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse
+[       OK ] ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse" end time: Feb 07 03:06 IST
+"ResourceManagerTest.UnregisterNonexistentResourceReturnsFalse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/109 Testing: ResourceManagerTest.AdjustResourceCapacity
+56/109 Test: ResourceManagerTest.AdjustResourceCapacity
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.AdjustResourceCapacity" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.AdjustResourceCapacity" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.AdjustResourceCapacity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.AdjustResourceCapacity
+[       OK ] ResourceManagerTest.AdjustResourceCapacity (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.AdjustResourceCapacity" end time: Feb 07 03:06 IST
+"ResourceManagerTest.AdjustResourceCapacity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/109 Testing: ResourceManagerTest.RegisterAndQueryAgent
+57/109 Test: ResourceManagerTest.RegisterAndQueryAgent
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RegisterAndQueryAgent" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RegisterAndQueryAgent" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RegisterAndQueryAgent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RegisterAndQueryAgent
+[       OK ] ResourceManagerTest.RegisterAndQueryAgent (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RegisterAndQueryAgent" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RegisterAndQueryAgent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/109 Testing: ResourceManagerTest.AgentCountTracking
+58/109 Test: ResourceManagerTest.AgentCountTracking
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.AgentCountTracking" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.AgentCountTracking" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.AgentCountTracking
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.AgentCountTracking
+[       OK ] ResourceManagerTest.AgentCountTracking (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.AgentCountTracking" end time: Feb 07 03:06 IST
+"ResourceManagerTest.AgentCountTracking" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/109 Testing: ResourceManagerTest.DeregisterAgent
+59/109 Test: ResourceManagerTest.DeregisterAgent
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.DeregisterAgent" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.DeregisterAgent" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.DeregisterAgent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.DeregisterAgent
+[       OK ] ResourceManagerTest.DeregisterAgent (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.DeregisterAgent" end time: Feb 07 03:06 IST
+"ResourceManagerTest.DeregisterAgent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/109 Testing: ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse
+60/109 Test: ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse
+[       OK ] ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse" end time: Feb 07 03:06 IST
+"ResourceManagerTest.DeregisterNonexistentAgentReturnsFalse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/109 Testing: ResourceManagerTest.GetAllAgents
+61/109 Test: ResourceManagerTest.GetAllAgents
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.GetAllAgents" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.GetAllAgents" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.GetAllAgents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.GetAllAgents
+[       OK ] ResourceManagerTest.GetAllAgents (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.GetAllAgents" end time: Feb 07 03:06 IST
+"ResourceManagerTest.GetAllAgents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/109 Testing: ResourceManagerTest.SimpleRequestAndRelease
+62/109 Test: ResourceManagerTest.SimpleRequestAndRelease
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.SimpleRequestAndRelease" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.SimpleRequestAndRelease" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.SimpleRequestAndRelease
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.SimpleRequestAndRelease
+[       OK ] ResourceManagerTest.SimpleRequestAndRelease (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.SimpleRequestAndRelease" end time: Feb 07 03:06 IST
+"ResourceManagerTest.SimpleRequestAndRelease" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/109 Testing: ResourceManagerTest.ReleaseAllResourcesForAgent
+63/109 Test: ResourceManagerTest.ReleaseAllResourcesForAgent
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.ReleaseAllResourcesForAgent" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.ReleaseAllResourcesForAgent" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.ReleaseAllResourcesForAgent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.ReleaseAllResourcesForAgent
+[       OK ] ResourceManagerTest.ReleaseAllResourcesForAgent (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.ReleaseAllResourcesForAgent" end time: Feb 07 03:06 IST
+"ResourceManagerTest.ReleaseAllResourcesForAgent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/109 Testing: ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim
+64/109 Test: ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim
+[       OK ] ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RequestDeniedWhenExceedsMaxClaim" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/109 Testing: ResourceManagerTest.RequestForUnknownResourceThrows
+65/109 Test: ResourceManagerTest.RequestForUnknownResourceThrows
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RequestForUnknownResourceThrows" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RequestForUnknownResourceThrows" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RequestForUnknownResourceThrows
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RequestForUnknownResourceThrows
+[       OK ] ResourceManagerTest.RequestForUnknownResourceThrows (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RequestForUnknownResourceThrows" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RequestForUnknownResourceThrows" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/109 Testing: ResourceManagerTest.RequestForUnknownAgentThrows
+66/109 Test: ResourceManagerTest.RequestForUnknownAgentThrows
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.RequestForUnknownAgentThrows" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.RequestForUnknownAgentThrows" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.RequestForUnknownAgentThrows
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.RequestForUnknownAgentThrows
+[       OK ] ResourceManagerTest.RequestForUnknownAgentThrows (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.RequestForUnknownAgentThrows" end time: Feb 07 03:06 IST
+"ResourceManagerTest.RequestForUnknownAgentThrows" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/109 Testing: ResourceManagerTest.BatchRequestAllGranted
+67/109 Test: ResourceManagerTest.BatchRequestAllGranted
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.BatchRequestAllGranted" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.BatchRequestAllGranted" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.BatchRequestAllGranted
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.BatchRequestAllGranted
+[       OK ] ResourceManagerTest.BatchRequestAllGranted (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.BatchRequestAllGranted" end time: Feb 07 03:06 IST
+"ResourceManagerTest.BatchRequestAllGranted" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/109 Testing: ResourceManagerTest.BatchRequestDeniedIfUnsafe
+68/109 Test: ResourceManagerTest.BatchRequestDeniedIfUnsafe
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.BatchRequestDeniedIfUnsafe" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.BatchRequestDeniedIfUnsafe" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.BatchRequestDeniedIfUnsafe
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.BatchRequestDeniedIfUnsafe
+[       OK ] ResourceManagerTest.BatchRequestDeniedIfUnsafe (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.BatchRequestDeniedIfUnsafe" end time: Feb 07 03:06 IST
+"ResourceManagerTest.BatchRequestDeniedIfUnsafe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/109 Testing: ResourceManagerTest.IsSafeInitially
+69/109 Test: ResourceManagerTest.IsSafeInitially
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.IsSafeInitially" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.IsSafeInitially" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.IsSafeInitially
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.IsSafeInitially
+[       OK ] ResourceManagerTest.IsSafeInitially (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.IsSafeInitially" end time: Feb 07 03:06 IST
+"ResourceManagerTest.IsSafeInitially" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/109 Testing: ResourceManagerTest.IsSafeAfterValidAllocations
+70/109 Test: ResourceManagerTest.IsSafeAfterValidAllocations
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.IsSafeAfterValidAllocations" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.IsSafeAfterValidAllocations" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.IsSafeAfterValidAllocations
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.IsSafeAfterValidAllocations
+[       OK ] ResourceManagerTest.IsSafeAfterValidAllocations (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.IsSafeAfterValidAllocations" end time: Feb 07 03:06 IST
+"ResourceManagerTest.IsSafeAfterValidAllocations" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/109 Testing: ResourceManagerTest.SystemSnapshot
+71/109 Test: ResourceManagerTest.SystemSnapshot
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.SystemSnapshot" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.SystemSnapshot" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.SystemSnapshot
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.SystemSnapshot
+[       OK ] ResourceManagerTest.SystemSnapshot (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.SystemSnapshot" end time: Feb 07 03:06 IST
+"ResourceManagerTest.SystemSnapshot" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/109 Testing: ResourceManagerTest.UpdateAgentMaxClaim
+72/109 Test: ResourceManagerTest.UpdateAgentMaxClaim
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.UpdateAgentMaxClaim" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.UpdateAgentMaxClaim" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.UpdateAgentMaxClaim
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.UpdateAgentMaxClaim
+[       OK ] ResourceManagerTest.UpdateAgentMaxClaim (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.UpdateAgentMaxClaim" end time: Feb 07 03:06 IST
+"ResourceManagerTest.UpdateAgentMaxClaim" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/109 Testing: ResourceManagerTest.DeregisterReleasesResources
+73/109 Test: ResourceManagerTest.DeregisterReleasesResources
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_resource_manager" "--gtest_filter=ResourceManagerTest.DeregisterReleasesResources" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ResourceManagerTest.DeregisterReleasesResources" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ResourceManagerTest.DeregisterReleasesResources
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ResourceManagerTest
+[ RUN      ] ResourceManagerTest.DeregisterReleasesResources
+[       OK ] ResourceManagerTest.DeregisterReleasesResources (0 ms)
+[----------] 1 test from ResourceManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ResourceManagerTest.DeregisterReleasesResources" end time: Feb 07 03:06 IST
+"ResourceManagerTest.DeregisterReleasesResources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/109 Testing: RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority
+74/109 Test: RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority
+[       OK ] RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority" end time: Feb 07 03:06 IST
+"RequestQueueTest.EnqueueAndDequeue_FIFO_SamePriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/109 Testing: RequestQueueTest.EnqueueAndDequeue_PriorityOrdering
+75/109 Test: RequestQueueTest.EnqueueAndDequeue_PriorityOrdering
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.EnqueueAndDequeue_PriorityOrdering" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.EnqueueAndDequeue_PriorityOrdering" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.EnqueueAndDequeue_PriorityOrdering
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.EnqueueAndDequeue_PriorityOrdering
+[       OK ] RequestQueueTest.EnqueueAndDequeue_PriorityOrdering (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.EnqueueAndDequeue_PriorityOrdering" end time: Feb 07 03:06 IST
+"RequestQueueTest.EnqueueAndDequeue_PriorityOrdering" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/109 Testing: RequestQueueTest.PeekDoesNotRemove
+76/109 Test: RequestQueueTest.PeekDoesNotRemove
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.PeekDoesNotRemove" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.PeekDoesNotRemove" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.PeekDoesNotRemove
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.PeekDoesNotRemove
+[       OK ] RequestQueueTest.PeekDoesNotRemove (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.PeekDoesNotRemove" end time: Feb 07 03:06 IST
+"RequestQueueTest.PeekDoesNotRemove" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/109 Testing: RequestQueueTest.CancelById
+77/109 Test: RequestQueueTest.CancelById
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.CancelById" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.CancelById" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.CancelById
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.CancelById
+[       OK ] RequestQueueTest.CancelById (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.CancelById" end time: Feb 07 03:06 IST
+"RequestQueueTest.CancelById" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/109 Testing: RequestQueueTest.CancelNonexistentReturnsFalse
+78/109 Test: RequestQueueTest.CancelNonexistentReturnsFalse
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.CancelNonexistentReturnsFalse" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.CancelNonexistentReturnsFalse" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.CancelNonexistentReturnsFalse
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.CancelNonexistentReturnsFalse
+[       OK ] RequestQueueTest.CancelNonexistentReturnsFalse (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.CancelNonexistentReturnsFalse" end time: Feb 07 03:06 IST
+"RequestQueueTest.CancelNonexistentReturnsFalse" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/109 Testing: RequestQueueTest.CancelAllForAgent
+79/109 Test: RequestQueueTest.CancelAllForAgent
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.CancelAllForAgent" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.CancelAllForAgent" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.CancelAllForAgent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.CancelAllForAgent
+[       OK ] RequestQueueTest.CancelAllForAgent (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.CancelAllForAgent" end time: Feb 07 03:06 IST
+"RequestQueueTest.CancelAllForAgent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/109 Testing: RequestQueueTest.CancelAllForNonexistentAgentReturnsZero
+80/109 Test: RequestQueueTest.CancelAllForNonexistentAgentReturnsZero
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.CancelAllForNonexistentAgentReturnsZero" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.CancelAllForNonexistentAgentReturnsZero" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.CancelAllForNonexistentAgentReturnsZero
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.CancelAllForNonexistentAgentReturnsZero
+[       OK ] RequestQueueTest.CancelAllForNonexistentAgentReturnsZero (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.CancelAllForNonexistentAgentReturnsZero" end time: Feb 07 03:06 IST
+"RequestQueueTest.CancelAllForNonexistentAgentReturnsZero" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/109 Testing: RequestQueueTest.ExpireTimedOut
+81/109 Test: RequestQueueTest.ExpireTimedOut
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.ExpireTimedOut" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.ExpireTimedOut" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.ExpireTimedOut
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.ExpireTimedOut
+[       OK ] RequestQueueTest.ExpireTimedOut (6 ms)
+[----------] 1 test from RequestQueueTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.ExpireTimedOut" end time: Feb 07 03:06 IST
+"RequestQueueTest.ExpireTimedOut" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/109 Testing: RequestQueueTest.NoExpiredWhenNoTimeouts
+82/109 Test: RequestQueueTest.NoExpiredWhenNoTimeouts
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.NoExpiredWhenNoTimeouts" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.NoExpiredWhenNoTimeouts" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.NoExpiredWhenNoTimeouts
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.NoExpiredWhenNoTimeouts
+[       OK ] RequestQueueTest.NoExpiredWhenNoTimeouts (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.NoExpiredWhenNoTimeouts" end time: Feb 07 03:06 IST
+"RequestQueueTest.NoExpiredWhenNoTimeouts" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/109 Testing: RequestQueueTest.DequeueEmptyReturnsNullopt
+83/109 Test: RequestQueueTest.DequeueEmptyReturnsNullopt
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.DequeueEmptyReturnsNullopt" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.DequeueEmptyReturnsNullopt" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.DequeueEmptyReturnsNullopt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.DequeueEmptyReturnsNullopt
+[       OK ] RequestQueueTest.DequeueEmptyReturnsNullopt (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.DequeueEmptyReturnsNullopt" end time: Feb 07 03:06 IST
+"RequestQueueTest.DequeueEmptyReturnsNullopt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/109 Testing: RequestQueueTest.PeekEmptyReturnsNullopt
+84/109 Test: RequestQueueTest.PeekEmptyReturnsNullopt
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.PeekEmptyReturnsNullopt" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.PeekEmptyReturnsNullopt" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.PeekEmptyReturnsNullopt
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.PeekEmptyReturnsNullopt
+[       OK ] RequestQueueTest.PeekEmptyReturnsNullopt (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.PeekEmptyReturnsNullopt" end time: Feb 07 03:06 IST
+"RequestQueueTest.PeekEmptyReturnsNullopt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/109 Testing: RequestQueueTest.EmptyAndSize
+85/109 Test: RequestQueueTest.EmptyAndSize
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.EmptyAndSize" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.EmptyAndSize" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.EmptyAndSize
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.EmptyAndSize
+[       OK ] RequestQueueTest.EmptyAndSize (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.EmptyAndSize" end time: Feb 07 03:06 IST
+"RequestQueueTest.EmptyAndSize" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/109 Testing: RequestQueueTest.Full
+86/109 Test: RequestQueueTest.Full
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.Full" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.Full" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.Full
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.Full
+[       OK ] RequestQueueTest.Full (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.Full" end time: Feb 07 03:06 IST
+"RequestQueueTest.Full" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/109 Testing: RequestQueueTest.GetAllPending
+87/109 Test: RequestQueueTest.GetAllPending
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.GetAllPending" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.GetAllPending" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.GetAllPending
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.GetAllPending
+[       OK ] RequestQueueTest.GetAllPending (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.GetAllPending" end time: Feb 07 03:06 IST
+"RequestQueueTest.GetAllPending" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/109 Testing: RequestQueueTest.GetPendingForResource
+88/109 Test: RequestQueueTest.GetPendingForResource
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.GetPendingForResource" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.GetPendingForResource" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.GetPendingForResource
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.GetPendingForResource
+[       OK ] RequestQueueTest.GetPendingForResource (0 ms)
+[----------] 1 test from RequestQueueTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.GetPendingForResource" end time: Feb 07 03:06 IST
+"RequestQueueTest.GetPendingForResource" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/109 Testing: RequestQueueTest.WaitAndDequeueTimesOut
+89/109 Test: RequestQueueTest.WaitAndDequeueTimesOut
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.WaitAndDequeueTimesOut" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.WaitAndDequeueTimesOut" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.WaitAndDequeueTimesOut
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.WaitAndDequeueTimesOut
+[       OK ] RequestQueueTest.WaitAndDequeueTimesOut (55 ms)
+[----------] 1 test from RequestQueueTest (55 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (55 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.WaitAndDequeueTimesOut" end time: Feb 07 03:06 IST
+"RequestQueueTest.WaitAndDequeueTimesOut" time elapsed: 00:00:00
+----------------------------------------------------------
+
+90/109 Testing: RequestQueueTest.WaitAndDequeueSucceeds
+90/109 Test: RequestQueueTest.WaitAndDequeueSucceeds
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue" "--gtest_filter=RequestQueueTest.WaitAndDequeueSucceeds" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"RequestQueueTest.WaitAndDequeueSucceeds" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RequestQueueTest.WaitAndDequeueSucceeds
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RequestQueueTest
+[ RUN      ] RequestQueueTest.WaitAndDequeueSucceeds
+[       OK ] RequestQueueTest.WaitAndDequeueSucceeds (24 ms)
+[----------] 1 test from RequestQueueTest (24 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (24 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"RequestQueueTest.WaitAndDequeueSucceeds" end time: Feb 07 03:06 IST
+"RequestQueueTest.WaitAndDequeueSucceeds" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/109 Testing: PolicyTest.FifoPolicyOrdersBySubmissionTime
+91/109 Test: PolicyTest.FifoPolicyOrdersBySubmissionTime
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.FifoPolicyOrdersBySubmissionTime" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.FifoPolicyOrdersBySubmissionTime" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.FifoPolicyOrdersBySubmissionTime
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.FifoPolicyOrdersBySubmissionTime
+[       OK ] PolicyTest.FifoPolicyOrdersBySubmissionTime (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.FifoPolicyOrdersBySubmissionTime" end time: Feb 07 03:06 IST
+"PolicyTest.FifoPolicyOrdersBySubmissionTime" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/109 Testing: PolicyTest.FifoPolicyEmptyInput
+92/109 Test: PolicyTest.FifoPolicyEmptyInput
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.FifoPolicyEmptyInput" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.FifoPolicyEmptyInput" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.FifoPolicyEmptyInput
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.FifoPolicyEmptyInput
+[       OK ] PolicyTest.FifoPolicyEmptyInput (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.FifoPolicyEmptyInput" end time: Feb 07 03:06 IST
+"PolicyTest.FifoPolicyEmptyInput" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/109 Testing: PolicyTest.FifoPolicySingleRequest
+93/109 Test: PolicyTest.FifoPolicySingleRequest
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.FifoPolicySingleRequest" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.FifoPolicySingleRequest" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.FifoPolicySingleRequest
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.FifoPolicySingleRequest
+[       OK ] PolicyTest.FifoPolicySingleRequest (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.FifoPolicySingleRequest" end time: Feb 07 03:06 IST
+"PolicyTest.FifoPolicySingleRequest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/109 Testing: PolicyTest.PriorityPolicyOrdersByPriorityDescending
+94/109 Test: PolicyTest.PriorityPolicyOrdersByPriorityDescending
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.PriorityPolicyOrdersByPriorityDescending" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.PriorityPolicyOrdersByPriorityDescending" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.PriorityPolicyOrdersByPriorityDescending
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.PriorityPolicyOrdersByPriorityDescending
+[       OK ] PolicyTest.PriorityPolicyOrdersByPriorityDescending (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.PriorityPolicyOrdersByPriorityDescending" end time: Feb 07 03:06 IST
+"PolicyTest.PriorityPolicyOrdersByPriorityDescending" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/109 Testing: PolicyTest.PriorityPolicyFIFOWithinSamePriority
+95/109 Test: PolicyTest.PriorityPolicyFIFOWithinSamePriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.PriorityPolicyFIFOWithinSamePriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.PriorityPolicyFIFOWithinSamePriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.PriorityPolicyFIFOWithinSamePriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.PriorityPolicyFIFOWithinSamePriority
+[       OK ] PolicyTest.PriorityPolicyFIFOWithinSamePriority (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.PriorityPolicyFIFOWithinSamePriority" end time: Feb 07 03:06 IST
+"PolicyTest.PriorityPolicyFIFOWithinSamePriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/109 Testing: PolicyTest.FairnessPolicyOrdersByWaitTimeDescending
+96/109 Test: PolicyTest.FairnessPolicyOrdersByWaitTimeDescending
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.FairnessPolicyOrdersByWaitTimeDescending" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.FairnessPolicyOrdersByWaitTimeDescending" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.FairnessPolicyOrdersByWaitTimeDescending
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.FairnessPolicyOrdersByWaitTimeDescending
+[       OK ] PolicyTest.FairnessPolicyOrdersByWaitTimeDescending (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.FairnessPolicyOrdersByWaitTimeDescending" end time: Feb 07 03:06 IST
+"PolicyTest.FairnessPolicyOrdersByWaitTimeDescending" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/109 Testing: PolicyTest.FairnessPolicyIgnoresPriority
+97/109 Test: PolicyTest.FairnessPolicyIgnoresPriority
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.FairnessPolicyIgnoresPriority" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.FairnessPolicyIgnoresPriority" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.FairnessPolicyIgnoresPriority
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.FairnessPolicyIgnoresPriority
+[       OK ] PolicyTest.FairnessPolicyIgnoresPriority (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.FairnessPolicyIgnoresPriority" end time: Feb 07 03:06 IST
+"PolicyTest.FairnessPolicyIgnoresPriority" time elapsed: 00:00:00
+----------------------------------------------------------
+
+98/109 Testing: PolicyTest.ShortestNeedPolicyName
+98/109 Test: PolicyTest.ShortestNeedPolicyName
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.ShortestNeedPolicyName" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.ShortestNeedPolicyName" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.ShortestNeedPolicyName
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.ShortestNeedPolicyName
+[       OK ] PolicyTest.ShortestNeedPolicyName (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.ShortestNeedPolicyName" end time: Feb 07 03:06 IST
+"PolicyTest.ShortestNeedPolicyName" time elapsed: 00:00:00
+----------------------------------------------------------
+
+99/109 Testing: PolicyTest.DeadlinePolicyName
+99/109 Test: PolicyTest.DeadlinePolicyName
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.DeadlinePolicyName" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.DeadlinePolicyName" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.DeadlinePolicyName
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.DeadlinePolicyName
+[       OK ] PolicyTest.DeadlinePolicyName (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.DeadlinePolicyName" end time: Feb 07 03:06 IST
+"PolicyTest.DeadlinePolicyName" time elapsed: 00:00:00
+----------------------------------------------------------
+
+100/109 Testing: PolicyTest.DeadlinePolicyOrdersByTimeout
+100/109 Test: PolicyTest.DeadlinePolicyOrdersByTimeout
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_policy" "--gtest_filter=PolicyTest.DeadlinePolicyOrdersByTimeout" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"PolicyTest.DeadlinePolicyOrdersByTimeout" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PolicyTest.DeadlinePolicyOrdersByTimeout
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.DeadlinePolicyOrdersByTimeout
+[       OK ] PolicyTest.DeadlinePolicyOrdersByTimeout (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.DeadlinePolicyOrdersByTimeout" end time: Feb 07 03:06 IST
+"PolicyTest.DeadlinePolicyOrdersByTimeout" time elapsed: 00:00:00
+----------------------------------------------------------
+
+101/109 Testing: DeadlockPreventionTest.DiningPhilosophers_AllComplete
+101/109 Test: DeadlockPreventionTest.DiningPhilosophers_AllComplete
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention" "--gtest_filter=DeadlockPreventionTest.DiningPhilosophers_AllComplete" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"DeadlockPreventionTest.DiningPhilosophers_AllComplete" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DeadlockPreventionTest.DiningPhilosophers_AllComplete
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DeadlockPreventionTest
+[ RUN      ] DeadlockPreventionTest.DiningPhilosophers_AllComplete
+[       OK ] DeadlockPreventionTest.DiningPhilosophers_AllComplete (35 ms)
+[----------] 1 test from DeadlockPreventionTest (35 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (35 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DeadlockPreventionTest.DiningPhilosophers_AllComplete" end time: Feb 07 03:06 IST
+"DeadlockPreventionTest.DiningPhilosophers_AllComplete" time elapsed: 00:00:00
+----------------------------------------------------------
+
+102/109 Testing: DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents
+102/109 Test: DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention" "--gtest_filter=DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DeadlockPreventionTest
+[ RUN      ] DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents
+[       OK ] DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents (37 ms)
+[----------] 1 test from DeadlockPreventionTest (37 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (37 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents" end time: Feb 07 03:06 IST
+"DeadlockPreventionTest.CircularWaitPrevention_ThreeAgents" time elapsed: 00:00:00
+----------------------------------------------------------
+
+103/109 Testing: DeadlockPreventionTest.IncrementalRequestsSafetyPrevention
+103/109 Test: DeadlockPreventionTest.IncrementalRequestsSafetyPrevention
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention" "--gtest_filter=DeadlockPreventionTest.IncrementalRequestsSafetyPrevention" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"DeadlockPreventionTest.IncrementalRequestsSafetyPrevention" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DeadlockPreventionTest.IncrementalRequestsSafetyPrevention
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DeadlockPreventionTest
+[ RUN      ] DeadlockPreventionTest.IncrementalRequestsSafetyPrevention
+[       OK ] DeadlockPreventionTest.IncrementalRequestsSafetyPrevention (19 ms)
+[----------] 1 test from DeadlockPreventionTest (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (19 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"DeadlockPreventionTest.IncrementalRequestsSafetyPrevention" end time: Feb 07 03:06 IST
+"DeadlockPreventionTest.IncrementalRequestsSafetyPrevention" time elapsed: 00:00:00
+----------------------------------------------------------
+
+104/109 Testing: DeadlockPreventionTest.IndividualRequestsMaintainSafety
+104/109 Test: DeadlockPreventionTest.IndividualRequestsMaintainSafety
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_deadlock_prevention" "--gtest_filter=DeadlockPreventionTest.IndividualRequestsMaintainSafety" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"DeadlockPreventionTest.IndividualRequestsMaintainSafety" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = DeadlockPreventionTest.IndividualRequestsMaintainSafety
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DeadlockPreventionTest
+[ RUN      ] DeadlockPreventionTest.IndividualRequestsMaintainSafety
+[       OK ] DeadlockPreventionTest.IndividualRequestsMaintainSafety (0 ms)
+[----------] 1 test from DeadlockPreventionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"DeadlockPreventionTest.IndividualRequestsMaintainSafety" end time: Feb 07 03:06 IST
+"DeadlockPreventionTest.IndividualRequestsMaintainSafety" time elapsed: 00:00:00
+----------------------------------------------------------
+
+105/109 Testing: ConcurrentAgentsTest.StressTest_10Agents_3Resources
+105/109 Test: ConcurrentAgentsTest.StressTest_10Agents_3Resources
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents" "--gtest_filter=ConcurrentAgentsTest.StressTest_10Agents_3Resources" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ConcurrentAgentsTest.StressTest_10Agents_3Resources" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConcurrentAgentsTest.StressTest_10Agents_3Resources
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConcurrentAgentsTest
+[ RUN      ] ConcurrentAgentsTest.StressTest_10Agents_3Resources
+[       OK ] ConcurrentAgentsTest.StressTest_10Agents_3Resources (28 ms)
+[----------] 1 test from ConcurrentAgentsTest (28 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (28 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ConcurrentAgentsTest.StressTest_10Agents_3Resources" end time: Feb 07 03:06 IST
+"ConcurrentAgentsTest.StressTest_10Agents_3Resources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+106/109 Testing: ConcurrentAgentsTest.ConcurrentRegistrationDeregistration
+106/109 Test: ConcurrentAgentsTest.ConcurrentRegistrationDeregistration
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents" "--gtest_filter=ConcurrentAgentsTest.ConcurrentRegistrationDeregistration" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ConcurrentAgentsTest.ConcurrentRegistrationDeregistration" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConcurrentAgentsTest.ConcurrentRegistrationDeregistration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConcurrentAgentsTest
+[ RUN      ] ConcurrentAgentsTest.ConcurrentRegistrationDeregistration
+[       OK ] ConcurrentAgentsTest.ConcurrentRegistrationDeregistration (0 ms)
+[----------] 1 test from ConcurrentAgentsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConcurrentAgentsTest.ConcurrentRegistrationDeregistration" end time: Feb 07 03:06 IST
+"ConcurrentAgentsTest.ConcurrentRegistrationDeregistration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+107/109 Testing: ConcurrentAgentsTest.ConcurrentBatchRequests
+107/109 Test: ConcurrentAgentsTest.ConcurrentBatchRequests
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents" "--gtest_filter=ConcurrentAgentsTest.ConcurrentBatchRequests" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ConcurrentAgentsTest.ConcurrentBatchRequests" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConcurrentAgentsTest.ConcurrentBatchRequests
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConcurrentAgentsTest
+[ RUN      ] ConcurrentAgentsTest.ConcurrentBatchRequests
+[       OK ] ConcurrentAgentsTest.ConcurrentBatchRequests (6 ms)
+[----------] 1 test from ConcurrentAgentsTest (6 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (6 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ConcurrentAgentsTest.ConcurrentBatchRequests" end time: Feb 07 03:06 IST
+"ConcurrentAgentsTest.ConcurrentBatchRequests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+108/109 Testing: ConcurrentAgentsTest.AsyncRequests
+108/109 Test: ConcurrentAgentsTest.AsyncRequests
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents" "--gtest_filter=ConcurrentAgentsTest.AsyncRequests" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ConcurrentAgentsTest.AsyncRequests" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConcurrentAgentsTest.AsyncRequests
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConcurrentAgentsTest
+[ RUN      ] ConcurrentAgentsTest.AsyncRequests
+[       OK ] ConcurrentAgentsTest.AsyncRequests (0 ms)
+[----------] 1 test from ConcurrentAgentsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ConcurrentAgentsTest.AsyncRequests" end time: Feb 07 03:06 IST
+"ConcurrentAgentsTest.AsyncRequests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+109/109 Testing: ConcurrentAgentsTest.HighContention_ScarceResources
+109/109 Test: ConcurrentAgentsTest.HighContention_ScarceResources
+Command: "/Users/saurabhkumar/Downloads/c++/build/tests/test_concurrent_agents" "--gtest_filter=ConcurrentAgentsTest.HighContention_ScarceResources" "--gtest_also_run_disabled_tests"
+Directory: /Users/saurabhkumar/Downloads/c++/build/tests
+"ConcurrentAgentsTest.HighContention_ScarceResources" start time: Feb 07 03:06 IST
+Output:
+----------------------------------------------------------
+Running main() from /Users/saurabhkumar/Downloads/c++/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = ConcurrentAgentsTest.HighContention_ScarceResources
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ConcurrentAgentsTest
+[ RUN      ] ConcurrentAgentsTest.HighContention_ScarceResources
+[       OK ] ConcurrentAgentsTest.HighContention_ScarceResources (50 ms)
+[----------] 1 test from ConcurrentAgentsTest (50 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (50 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ConcurrentAgentsTest.HighContention_ScarceResources" end time: Feb 07 03:06 IST
+"ConcurrentAgentsTest.HighContention_ScarceResources" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 07 03:06 IST

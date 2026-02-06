@@ -1,0 +1,32 @@
+{
+  "tests": 4,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DeadlockPreventionTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "DiningPhilosophers_AllComplete",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_deadlock_prevention.cpp",
+          "line": 21
+        },
+        {
+          "name": "CircularWaitPrevention_ThreeAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_deadlock_prevention.cpp",
+          "line": 119
+        },
+        {
+          "name": "IncrementalRequestsSafetyPrevention",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_deadlock_prevention.cpp",
+          "line": 201
+        },
+        {
+          "name": "IndividualRequestsMaintainSafety",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_deadlock_prevention.cpp",
+          "line": 263
+        }
+      ]
+    }
+  ]
+}

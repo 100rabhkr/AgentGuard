@@ -1,0 +1,37 @@
+{
+  "tests": 5,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ConcurrentAgentsTest",
+      "tests": 5,
+      "testsuite": [
+        {
+          "name": "StressTest_10Agents_3Resources",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_concurrent_agents.cpp",
+          "line": 16
+        },
+        {
+          "name": "ConcurrentRegistrationDeregistration",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_concurrent_agents.cpp",
+          "line": 134
+        },
+        {
+          "name": "ConcurrentBatchRequests",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_concurrent_agents.cpp",
+          "line": 187
+        },
+        {
+          "name": "AsyncRequests",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_concurrent_agents.cpp",
+          "line": 255
+        },
+        {
+          "name": "HighContention_ScarceResources",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_concurrent_agents.cpp",
+          "line": 287
+        }
+      ]
+    }
+  ]
+}

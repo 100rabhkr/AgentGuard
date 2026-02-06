@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_request_queue[1]_tests.cmake")
+else()
+  add_test(test_request_queue_NOT_BUILT test_request_queue_NOT_BUILT)
+endif()

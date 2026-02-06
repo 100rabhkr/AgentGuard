@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/example_priority_agents.dir/04_priority_agents.cpp.o -o example_priority_agents  ../src/libagentguard.a

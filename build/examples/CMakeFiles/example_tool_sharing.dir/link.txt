@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/example_tool_sharing.dir/03_tool_sharing.cpp.o -o example_tool_sharing  ../src/libagentguard.a

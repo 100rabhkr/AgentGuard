@@ -1,0 +1,127 @@
+{
+  "tests": 23,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ResourceManagerTest",
+      "tests": 23,
+      "testsuite": [
+        {
+          "name": "RegisterAndQueryResource",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 26
+        },
+        {
+          "name": "QueryNonexistentResourceReturnsNullopt",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 37
+        },
+        {
+          "name": "RegisterMultipleResources",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 42
+        },
+        {
+          "name": "UnregisterResource",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 51
+        },
+        {
+          "name": "UnregisterNonexistentResourceReturnsFalse",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 57
+        },
+        {
+          "name": "AdjustResourceCapacity",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 61
+        },
+        {
+          "name": "RegisterAndQueryAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 74
+        },
+        {
+          "name": "AgentCountTracking",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 85
+        },
+        {
+          "name": "DeregisterAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 95
+        },
+        {
+          "name": "DeregisterNonexistentAgentReturnsFalse",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 104
+        },
+        {
+          "name": "GetAllAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 108
+        },
+        {
+          "name": "SimpleRequestAndRelease",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 121
+        },
+        {
+          "name": "ReleaseAllResourcesForAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 154
+        },
+        {
+          "name": "RequestDeniedWhenExceedsMaxClaim",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 179
+        },
+        {
+          "name": "RequestForUnknownResourceThrows",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 190
+        },
+        {
+          "name": "RequestForUnknownAgentThrows",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 197
+        },
+        {
+          "name": "BatchRequestAllGranted",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 206
+        },
+        {
+          "name": "BatchRequestDeniedIfUnsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 228
+        },
+        {
+          "name": "IsSafeInitially",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 256
+        },
+        {
+          "name": "IsSafeAfterValidAllocations",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 261
+        },
+        {
+          "name": "SystemSnapshot",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 272
+        },
+        {
+          "name": "UpdateAgentMaxClaim",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 291
+        },
+        {
+          "name": "DeregisterReleasesResources",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_resource_manager.cpp",
+          "line": 309
+        }
+      ]
+    }
+  ]
+}
