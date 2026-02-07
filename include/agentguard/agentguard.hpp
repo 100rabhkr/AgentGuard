@@ -17,6 +17,11 @@
 #include "agentguard/monitor.hpp"
 #include "agentguard/policy.hpp"
 
+// Novel safety subsystems
+#include "agentguard/progress_tracker.hpp"
+#include "agentguard/delegation_tracker.hpp"
+#include "agentguard/demand_estimator.hpp"
+
 // AI-specific resource types
 #include "agentguard/ai/token_budget.hpp"
 #include "agentguard/ai/rate_limiter.hpp"

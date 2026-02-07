@@ -263,6 +263,58 @@ test_policy/fast:
 .PHONY : test_policy/fast
 
 #=============================================================================
+# Target rules for targets named test_progress_tracker
+
+# Build rule for target.
+test_progress_tracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_progress_tracker
+.PHONY : test_progress_tracker
+
+# fast build rule for target.
+test_progress_tracker/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_tracker.dir/build.make tests/CMakeFiles/test_progress_tracker.dir/build
+.PHONY : test_progress_tracker/fast
+
+#=============================================================================
+# Target rules for targets named test_delegation_tracker
+
+# Build rule for target.
+test_delegation_tracker: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_delegation_tracker
+.PHONY : test_delegation_tracker
+
+# fast build rule for target.
+test_delegation_tracker/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_tracker.dir/build.make tests/CMakeFiles/test_delegation_tracker.dir/build
+.PHONY : test_delegation_tracker/fast
+
+#=============================================================================
+# Target rules for targets named test_demand_estimator
+
+# Build rule for target.
+test_demand_estimator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_demand_estimator
+.PHONY : test_demand_estimator
+
+# fast build rule for target.
+test_demand_estimator/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_demand_estimator.dir/build.make tests/CMakeFiles/test_demand_estimator.dir/build
+.PHONY : test_demand_estimator/fast
+
+#=============================================================================
+# Target rules for targets named test_probabilistic_safety
+
+# Build rule for target.
+test_probabilistic_safety: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_probabilistic_safety
+.PHONY : test_probabilistic_safety
+
+# fast build rule for target.
+test_probabilistic_safety/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_probabilistic_safety.dir/build.make tests/CMakeFiles/test_probabilistic_safety.dir/build
+.PHONY : test_probabilistic_safety/fast
+
+#=============================================================================
 # Target rules for targets named test_deadlock_prevention
 
 # Build rule for target.
@@ -287,6 +339,45 @@ test_concurrent_agents: cmake_check_build_system
 test_concurrent_agents/fast:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_concurrent_agents.dir/build.make tests/CMakeFiles/test_concurrent_agents.dir/build
 .PHONY : test_concurrent_agents/fast
+
+#=============================================================================
+# Target rules for targets named test_delegation_cycle
+
+# Build rule for target.
+test_delegation_cycle: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_delegation_cycle
+.PHONY : test_delegation_cycle
+
+# fast build rule for target.
+test_delegation_cycle/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_cycle.dir/build.make tests/CMakeFiles/test_delegation_cycle.dir/build
+.PHONY : test_delegation_cycle/fast
+
+#=============================================================================
+# Target rules for targets named test_adaptive_demands
+
+# Build rule for target.
+test_adaptive_demands: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_adaptive_demands
+.PHONY : test_adaptive_demands
+
+# fast build rule for target.
+test_adaptive_demands/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adaptive_demands.dir/build.make tests/CMakeFiles/test_adaptive_demands.dir/build
+.PHONY : test_adaptive_demands/fast
+
+#=============================================================================
+# Target rules for targets named test_progress_monitor
+
+# Build rule for target.
+test_progress_monitor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_progress_monitor
+.PHONY : test_progress_monitor
+
+# fast build rule for target.
+test_progress_monitor/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_monitor.dir/build.make tests/CMakeFiles/test_progress_monitor.dir/build
+.PHONY : test_progress_monitor/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -392,6 +483,19 @@ example_priority_agents/fast:
 	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_priority_agents.dir/build.make examples/CMakeFiles/example_priority_agents.dir/build
 .PHONY : example_priority_agents/fast
 
+#=============================================================================
+# Target rules for targets named example_adaptive_agents
+
+# Build rule for target.
+example_adaptive_agents: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example_adaptive_agents
+.PHONY : example_adaptive_agents
+
+# fast build rule for target.
+example_adaptive_agents/fast:
+	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_adaptive_agents.dir/build.make examples/CMakeFiles/example_adaptive_agents.dir/build
+.PHONY : example_adaptive_agents/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -406,6 +510,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... agentguard"
+	@echo "... example_adaptive_agents"
 	@echo "... example_basic"
 	@echo "... example_llm_rate_limits"
 	@echo "... example_priority_agents"
@@ -414,10 +519,17 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... test_adaptive_demands"
 	@echo "... test_agent"
 	@echo "... test_concurrent_agents"
 	@echo "... test_deadlock_prevention"
+	@echo "... test_delegation_cycle"
+	@echo "... test_delegation_tracker"
+	@echo "... test_demand_estimator"
 	@echo "... test_policy"
+	@echo "... test_probabilistic_safety"
+	@echo "... test_progress_monitor"
+	@echo "... test_progress_tracker"
 	@echo "... test_request_queue"
 	@echo "... test_resource"
 	@echo "... test_resource_manager"

@@ -960,7 +960,7 @@ src/CMakeFiles/agentguard.dir/resource_manager.cpp.o: \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/monitor.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/policy.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/config.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/progress_tracker.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
@@ -995,5 +995,9 @@ src/CMakeFiles/agentguard.dir/resource_manager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/delegation_tracker.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/demand_estimator.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/shared_mutex \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/exceptions.hpp

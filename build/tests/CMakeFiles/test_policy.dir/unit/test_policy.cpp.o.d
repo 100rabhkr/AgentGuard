@@ -1041,13 +1041,17 @@ tests/CMakeFiles/test_policy.dir/unit/test_policy.cpp.o: \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/resource_manager.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/monitor.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/policy.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/progress_tracker.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/thread \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/formatter.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/jthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__stop_token/stop_source.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/delegation_tracker.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/demand_estimator.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/future \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/shared_mutex \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/ai/token_budget.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/ai/rate_limiter.hpp \

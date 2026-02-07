@@ -1,0 +1,114 @@
+{
+  "tests": 18,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DelegationTrackerNotifyTest",
+      "tests": 16,
+      "testsuite": [
+        {
+          "name": "RegisterAndDeregisterAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 89
+        },
+        {
+          "name": "ReportSimpleDelegationNoCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 108
+        },
+        {
+          "name": "CompleteDelegationRemovesEdge",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 128
+        },
+        {
+          "name": "CancelDelegationRemovesEdge",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 143
+        },
+        {
+          "name": "GetAllDelegations",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 158
+        },
+        {
+          "name": "GetDelegationsFromAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 174
+        },
+        {
+          "name": "GetDelegationsToAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 198
+        },
+        {
+          "name": "SelfDelegationCycleDetected",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 217
+        },
+        {
+          "name": "TwoNodeCycleDetected",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 233
+        },
+        {
+          "name": "ThreeNodeCycleDetected",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 254
+        },
+        {
+          "name": "NoCycleInLinearChain",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 274
+        },
+        {
+          "name": "NotifyOnlyAcceptsDelegationOnCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 293
+        },
+        {
+          "name": "FindCycleDetectsExistingCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 350
+        },
+        {
+          "name": "FindCycleReturnsNulloptWhenNoCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 368
+        },
+        {
+          "name": "DeregisterRemovesAllEdges",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 384
+        },
+        {
+          "name": "MonitorEventsEmitted",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 408
+        }
+      ]
+    },
+    {
+      "name": "DelegationTrackerRejectTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "RejectDelegationOnCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 310
+        }
+      ]
+    },
+    {
+      "name": "DelegationTrackerCancelTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "CancelLatestOnCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_delegation_tracker.cpp",
+          "line": 330
+        }
+      ]
+    }
+  ]
+}

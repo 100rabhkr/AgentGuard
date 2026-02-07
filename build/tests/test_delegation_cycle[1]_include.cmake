@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_delegation_cycle[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_delegation_cycle[1]_tests.cmake")
+else()
+  add_test(test_delegation_cycle_NOT_BUILT test_delegation_cycle_NOT_BUILT)
+endif()

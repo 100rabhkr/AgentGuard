@@ -1,0 +1,122 @@
+{
+  "tests": 22,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DemandEstimatorTest",
+      "tests": 22,
+      "testsuite": [
+        {
+          "name": "MeanOfEmptyStatsIsZero",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 41
+        },
+        {
+          "name": "MeanOfSingleValue",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 46
+        },
+        {
+          "name": "MeanOfMultipleValues",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 54
+        },
+        {
+          "name": "VarianceOfSingleValueIsZero",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 64
+        },
+        {
+          "name": "VarianceOfMultipleValues",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 72
+        },
+        {
+          "name": "StddevIsSqrtOfVariance",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 83
+        },
+        {
+          "name": "ZeroObservationsReturnsColdStartDefault",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 96
+        },
+        {
+          "name": "SingleObservationReturnsValueTimesHeadroomFactor",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 102
+        },
+        {
+          "name": "TwoObservationsReturnsStatisticalEstimate",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 109
+        },
+        {
+          "name": "EstimateIncreasesWithConfidenceLevel",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 126
+        },
+        {
+          "name": "EstimateFloorIsMaxSingleRequest",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 135
+        },
+        {
+          "name": "EstimateCapIsMaxCumulativeTimesHeadroom",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 148
+        },
+        {
+          "name": "HighConfidenceLargerThanLowConfidence",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 161
+        },
+        {
+          "name": "WindowRespectsHistoryWindowSize",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 174
+        },
+        {
+          "name": "OldValuesAreOverwrittenInCircularBuffer",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 185
+        },
+        {
+          "name": "DefaultModeIsStatic",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 212
+        },
+        {
+          "name": "SetAndGetAgentDemandMode",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 217
+        },
+        {
+          "name": "ModePersistsAcrossCalls",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 225
+        },
+        {
+          "name": "ClearAgentRemovesAllStats",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 238
+        },
+        {
+          "name": "EstimateAllMaxNeedsReturnsAllAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 255
+        },
+        {
+          "name": "GetStatsForUnknownAgentReturnsNullopt",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 270
+        },
+        {
+          "name": "RecordAllocationLevelUpdatesMaxCumulative",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_demand_estimator.cpp",
+          "line": 274
+        }
+      ]
+    }
+  ]
+}

@@ -264,4 +264,41 @@ std::vector<AgentId> SafetyChecker::identify_bottleneck_agents(
     return result;
 }
 
+ProbabilisticSafetyResult SafetyChecker::check_safety_probabilistic(
+    const SafetyCheckInput& input,
+    double confidence_level) const
+{
+    auto binary_result = check_safety(input);
+
+    ProbabilisticSafetyResult result;
+    result.is_safe = binary_result.is_safe;
+    result.confidence_level = confidence_level;
+    result.safe_sequence = std::move(binary_result.safe_sequence);
+    result.reason = std::move(binary_result.reason);
+
+    // max_safe_confidence: if safe at this level, report it; if not, 0.0
+    // (the caller can binary-search confidence levels externally if needed)
+    result.max_safe_confidence = binary_result.is_safe ? confidence_level : 0.0;
+
+    // Copy the max_need map so the caller can inspect what estimates were used
+    result.estimated_max_needs = input.max_need;
+
+    return result;
+}
+
+ProbabilisticSafetyResult SafetyChecker::check_hypothetical_probabilistic(
+    const SafetyCheckInput& current_state,
+    AgentId agent,
+    ResourceTypeId resource,
+    ResourceQuantity quantity,
+    double confidence_level) const
+{
+    // Build hypothetical state with the grant applied
+    SafetyCheckInput hypothetical = current_state;
+    hypothetical.available[resource] -= quantity;
+    hypothetical.allocation[agent][resource] += quantity;
+
+    return check_safety_probabilistic(hypothetical, confidence_level);
+}
+
 } // namespace agentguard

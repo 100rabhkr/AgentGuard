@@ -1,0 +1,42 @@
+{
+  "tests": 6,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ProgressMonitorTest",
+      "tests": 6,
+      "testsuite": [
+        {
+          "name": "ProgressReportingKeepsAgentNotStalled",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 70
+        },
+        {
+          "name": "StallDetectedWhenNoProgress",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 99
+        },
+        {
+          "name": "MonitorEventsForStallAndResolution",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 128
+        },
+        {
+          "name": "AutoReleaseOnStall",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 165
+        },
+        {
+          "name": "ProgressDisabledIsNoOp",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 217
+        },
+        {
+          "name": "MultipleAgentsWithDifferentStallStates",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_progress_monitor.cpp",
+          "line": 256
+        }
+      ]
+    }
+  ]
+}

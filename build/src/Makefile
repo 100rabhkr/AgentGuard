@@ -329,6 +329,54 @@ config.cpp.s:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/config.cpp.s
 .PHONY : config.cpp.s
 
+delegation_tracker.o: delegation_tracker.cpp.o
+.PHONY : delegation_tracker.o
+
+# target to build an object file
+delegation_tracker.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o
+.PHONY : delegation_tracker.cpp.o
+
+delegation_tracker.i: delegation_tracker.cpp.i
+.PHONY : delegation_tracker.i
+
+# target to preprocess a source file
+delegation_tracker.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.i
+.PHONY : delegation_tracker.cpp.i
+
+delegation_tracker.s: delegation_tracker.cpp.s
+.PHONY : delegation_tracker.s
+
+# target to generate assembly for a file
+delegation_tracker.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.s
+.PHONY : delegation_tracker.cpp.s
+
+demand_estimator.o: demand_estimator.cpp.o
+.PHONY : demand_estimator.o
+
+# target to build an object file
+demand_estimator.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o
+.PHONY : demand_estimator.cpp.o
+
+demand_estimator.i: demand_estimator.cpp.i
+.PHONY : demand_estimator.i
+
+# target to preprocess a source file
+demand_estimator.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/demand_estimator.cpp.i
+.PHONY : demand_estimator.cpp.i
+
+demand_estimator.s: demand_estimator.cpp.s
+.PHONY : demand_estimator.s
+
+# target to generate assembly for a file
+demand_estimator.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/demand_estimator.cpp.s
+.PHONY : demand_estimator.cpp.s
+
 monitor.o: monitor.cpp.o
 .PHONY : monitor.o
 
@@ -376,6 +424,30 @@ policy.s: policy.cpp.s
 policy.cpp.s:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/policy.cpp.s
 .PHONY : policy.cpp.s
+
+progress_tracker.o: progress_tracker.cpp.o
+.PHONY : progress_tracker.o
+
+# target to build an object file
+progress_tracker.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o
+.PHONY : progress_tracker.cpp.o
+
+progress_tracker.i: progress_tracker.cpp.i
+.PHONY : progress_tracker.i
+
+# target to preprocess a source file
+progress_tracker.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/progress_tracker.cpp.i
+.PHONY : progress_tracker.cpp.i
+
+progress_tracker.s: progress_tracker.cpp.s
+.PHONY : progress_tracker.s
+
+# target to generate assembly for a file
+progress_tracker.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/agentguard.dir/build.make src/CMakeFiles/agentguard.dir/progress_tracker.cpp.s
+.PHONY : progress_tracker.cpp.s
 
 request_queue.o: request_queue.cpp.o
 .PHONY : request_queue.o
@@ -505,12 +577,21 @@ help:
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
+	@echo "... delegation_tracker.o"
+	@echo "... delegation_tracker.i"
+	@echo "... delegation_tracker.s"
+	@echo "... demand_estimator.o"
+	@echo "... demand_estimator.i"
+	@echo "... demand_estimator.s"
 	@echo "... monitor.o"
 	@echo "... monitor.i"
 	@echo "... monitor.s"
 	@echo "... policy.o"
 	@echo "... policy.i"
 	@echo "... policy.s"
+	@echo "... progress_tracker.o"
+	@echo "... progress_tracker.i"
+	@echo "... progress_tracker.s"
 	@echo "... request_queue.o"
 	@echo "... request_queue.i"
 	@echo "... request_queue.s"

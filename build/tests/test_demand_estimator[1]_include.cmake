@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_demand_estimator[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_demand_estimator[1]_tests.cmake")
+else()
+  add_test(test_demand_estimator_NOT_BUILT test_demand_estimator_NOT_BUILT)
+endif()

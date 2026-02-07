@@ -135,4 +135,39 @@ inline const char* to_string(ResourceCategory c) {
     return "Unknown";
 }
 
+// Delegation edge metadata
+struct DelegationInfo {
+    AgentId from{0};
+    AgentId to{0};
+    std::string task_description;
+    Timestamp timestamp{};
+};
+
+// Demand estimation mode
+enum class DemandMode {
+    Static,    // Use explicit declare_max_need() only (backward compat)
+    Adaptive,  // Compute from usage statistics only
+    Hybrid     // Statistical estimate capped by explicit declaration
+};
+
+// Probabilistic safety result
+struct ProbabilisticSafetyResult {
+    bool is_safe{false};
+    double confidence_level{0.0};
+    double max_safe_confidence{0.0};
+    std::vector<AgentId> safe_sequence;
+    std::string reason;
+    std::unordered_map<AgentId,
+        std::unordered_map<ResourceTypeId, ResourceQuantity>> estimated_max_needs;
+};
+
+inline const char* to_string(DemandMode m) {
+    switch (m) {
+        case DemandMode::Static:   return "Static";
+        case DemandMode::Adaptive: return "Adaptive";
+        case DemandMode::Hybrid:   return "Hybrid";
+    }
+    return "Unknown";
+}
+
 } // namespace agentguard

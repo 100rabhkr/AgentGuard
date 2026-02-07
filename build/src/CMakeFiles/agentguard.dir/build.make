@@ -240,6 +240,48 @@ src/CMakeFiles/agentguard.dir/ai/memory_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/agentguard.dir/ai/memory_pool.cpp.s"
 	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saurabhkumar/Downloads/c++/src/ai/memory_pool.cpp -o CMakeFiles/agentguard.dir/ai/memory_pool.cpp.s
 
+src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o: src/CMakeFiles/agentguard.dir/flags.make
+src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o: /Users/saurabhkumar/Downloads/c++/src/progress_tracker.cpp
+src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o: src/CMakeFiles/agentguard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saurabhkumar/Downloads/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o -MF CMakeFiles/agentguard.dir/progress_tracker.cpp.o.d -o CMakeFiles/agentguard.dir/progress_tracker.cpp.o -c /Users/saurabhkumar/Downloads/c++/src/progress_tracker.cpp
+
+src/CMakeFiles/agentguard.dir/progress_tracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/agentguard.dir/progress_tracker.cpp.i"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saurabhkumar/Downloads/c++/src/progress_tracker.cpp > CMakeFiles/agentguard.dir/progress_tracker.cpp.i
+
+src/CMakeFiles/agentguard.dir/progress_tracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/agentguard.dir/progress_tracker.cpp.s"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saurabhkumar/Downloads/c++/src/progress_tracker.cpp -o CMakeFiles/agentguard.dir/progress_tracker.cpp.s
+
+src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o: src/CMakeFiles/agentguard.dir/flags.make
+src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o: /Users/saurabhkumar/Downloads/c++/src/delegation_tracker.cpp
+src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o: src/CMakeFiles/agentguard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saurabhkumar/Downloads/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o -MF CMakeFiles/agentguard.dir/delegation_tracker.cpp.o.d -o CMakeFiles/agentguard.dir/delegation_tracker.cpp.o -c /Users/saurabhkumar/Downloads/c++/src/delegation_tracker.cpp
+
+src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/agentguard.dir/delegation_tracker.cpp.i"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saurabhkumar/Downloads/c++/src/delegation_tracker.cpp > CMakeFiles/agentguard.dir/delegation_tracker.cpp.i
+
+src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/agentguard.dir/delegation_tracker.cpp.s"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saurabhkumar/Downloads/c++/src/delegation_tracker.cpp -o CMakeFiles/agentguard.dir/delegation_tracker.cpp.s
+
+src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o: src/CMakeFiles/agentguard.dir/flags.make
+src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o: /Users/saurabhkumar/Downloads/c++/src/demand_estimator.cpp
+src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o: src/CMakeFiles/agentguard.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/saurabhkumar/Downloads/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o -MF CMakeFiles/agentguard.dir/demand_estimator.cpp.o.d -o CMakeFiles/agentguard.dir/demand_estimator.cpp.o -c /Users/saurabhkumar/Downloads/c++/src/demand_estimator.cpp
+
+src/CMakeFiles/agentguard.dir/demand_estimator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/agentguard.dir/demand_estimator.cpp.i"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/saurabhkumar/Downloads/c++/src/demand_estimator.cpp > CMakeFiles/agentguard.dir/demand_estimator.cpp.i
+
+src/CMakeFiles/agentguard.dir/demand_estimator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/agentguard.dir/demand_estimator.cpp.s"
+	cd /Users/saurabhkumar/Downloads/c++/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/saurabhkumar/Downloads/c++/src/demand_estimator.cpp -o CMakeFiles/agentguard.dir/demand_estimator.cpp.s
+
 # Object files for target agentguard
 agentguard_OBJECTS = \
 "CMakeFiles/agentguard.dir/resource.cpp.o" \
@@ -253,7 +295,10 @@ agentguard_OBJECTS = \
 "CMakeFiles/agentguard.dir/ai/token_budget.cpp.o" \
 "CMakeFiles/agentguard.dir/ai/rate_limiter.cpp.o" \
 "CMakeFiles/agentguard.dir/ai/tool_slot.cpp.o" \
-"CMakeFiles/agentguard.dir/ai/memory_pool.cpp.o"
+"CMakeFiles/agentguard.dir/ai/memory_pool.cpp.o" \
+"CMakeFiles/agentguard.dir/progress_tracker.cpp.o" \
+"CMakeFiles/agentguard.dir/delegation_tracker.cpp.o" \
+"CMakeFiles/agentguard.dir/demand_estimator.cpp.o"
 
 # External object files for target agentguard
 agentguard_EXTERNAL_OBJECTS =
@@ -270,9 +315,12 @@ src/libagentguard.a: src/CMakeFiles/agentguard.dir/ai/token_budget.cpp.o
 src/libagentguard.a: src/CMakeFiles/agentguard.dir/ai/rate_limiter.cpp.o
 src/libagentguard.a: src/CMakeFiles/agentguard.dir/ai/tool_slot.cpp.o
 src/libagentguard.a: src/CMakeFiles/agentguard.dir/ai/memory_pool.cpp.o
+src/libagentguard.a: src/CMakeFiles/agentguard.dir/progress_tracker.cpp.o
+src/libagentguard.a: src/CMakeFiles/agentguard.dir/delegation_tracker.cpp.o
+src/libagentguard.a: src/CMakeFiles/agentguard.dir/demand_estimator.cpp.o
 src/libagentguard.a: src/CMakeFiles/agentguard.dir/build.make
 src/libagentguard.a: src/CMakeFiles/agentguard.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/saurabhkumar/Downloads/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libagentguard.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/saurabhkumar/Downloads/c++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX static library libagentguard.a"
 	cd /Users/saurabhkumar/Downloads/c++/build/src && $(CMAKE_COMMAND) -P CMakeFiles/agentguard.dir/cmake_clean_target.cmake
 	cd /Users/saurabhkumar/Downloads/c++/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agentguard.dir/link.txt --verbose=$(VERBOSE)
 

@@ -227,6 +227,20 @@ example_priority_agents/fast:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_priority_agents.dir/build.make examples/CMakeFiles/example_priority_agents.dir/build
 .PHONY : example_priority_agents/fast
 
+# Convenience name for target.
+examples/CMakeFiles/example_adaptive_agents.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples/CMakeFiles/example_adaptive_agents.dir/rule
+.PHONY : examples/CMakeFiles/example_adaptive_agents.dir/rule
+
+# Convenience name for target.
+example_adaptive_agents: examples/CMakeFiles/example_adaptive_agents.dir/rule
+.PHONY : example_adaptive_agents
+
+# fast build rule for target.
+example_adaptive_agents/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_adaptive_agents.dir/build.make examples/CMakeFiles/example_adaptive_agents.dir/build
+.PHONY : example_adaptive_agents/fast
+
 01_basic_usage.o: 01_basic_usage.cpp.o
 .PHONY : 01_basic_usage.o
 
@@ -323,6 +337,30 @@ example_priority_agents/fast:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_priority_agents.dir/build.make examples/CMakeFiles/example_priority_agents.dir/04_priority_agents.cpp.s
 .PHONY : 04_priority_agents.cpp.s
 
+05_adaptive_agents.o: 05_adaptive_agents.cpp.o
+.PHONY : 05_adaptive_agents.o
+
+# target to build an object file
+05_adaptive_agents.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_adaptive_agents.dir/build.make examples/CMakeFiles/example_adaptive_agents.dir/05_adaptive_agents.cpp.o
+.PHONY : 05_adaptive_agents.cpp.o
+
+05_adaptive_agents.i: 05_adaptive_agents.cpp.i
+.PHONY : 05_adaptive_agents.i
+
+# target to preprocess a source file
+05_adaptive_agents.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_adaptive_agents.dir/build.make examples/CMakeFiles/example_adaptive_agents.dir/05_adaptive_agents.cpp.i
+.PHONY : 05_adaptive_agents.cpp.i
+
+05_adaptive_agents.s: 05_adaptive_agents.cpp.s
+.PHONY : 05_adaptive_agents.s
+
+# target to generate assembly for a file
+05_adaptive_agents.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/example_adaptive_agents.dir/build.make examples/CMakeFiles/example_adaptive_agents.dir/05_adaptive_agents.cpp.s
+.PHONY : 05_adaptive_agents.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -336,6 +374,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... example_adaptive_agents"
 	@echo "... example_basic"
 	@echo "... example_llm_rate_limits"
 	@echo "... example_priority_agents"
@@ -352,6 +391,9 @@ help:
 	@echo "... 04_priority_agents.o"
 	@echo "... 04_priority_agents.i"
 	@echo "... 04_priority_agents.s"
+	@echo "... 05_adaptive_agents.o"
+	@echo "... 05_adaptive_agents.i"
+	@echo "... 05_adaptive_agents.s"
 .PHONY : help
 
 

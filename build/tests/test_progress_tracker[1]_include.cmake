@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_progress_tracker[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_progress_tracker[1]_tests.cmake")
+else()
+  add_test(test_progress_tracker_NOT_BUILT test_progress_tracker_NOT_BUILT)
+endif()

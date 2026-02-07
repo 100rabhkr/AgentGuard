@@ -1,0 +1,62 @@
+{
+  "tests": 10,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ProgressTrackerTest",
+      "tests": 10,
+      "testsuite": [
+        {
+          "name": "RegisterAndDeregisterAgent",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 82
+        },
+        {
+          "name": "ReportProgressUpdatesMetricValues",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 100
+        },
+        {
+          "name": "GetProgressReturnsRecordedMetrics",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 124
+        },
+        {
+          "name": "StallDetectionAfterThresholdExpires",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 152
+        },
+        {
+          "name": "StallResolutionOnNewProgressReport",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 174
+        },
+        {
+          "name": "PerAgentStallThresholdOverride",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 201
+        },
+        {
+          "name": "GetStalledAgentsReturnsCorrectList",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 230
+        },
+        {
+          "name": "IsStalledForUnknownAgentReturnsFalse",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 267
+        },
+        {
+          "name": "StartStopLifecycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 279
+        },
+        {
+          "name": "MonitorEventsEmitted",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/unit\/test_progress_tracker.cpp",
+          "line": 306
+        }
+      ]
+    }
+  ]
+}

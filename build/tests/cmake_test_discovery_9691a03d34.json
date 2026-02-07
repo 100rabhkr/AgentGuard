@@ -1,0 +1,48 @@
+{
+  "tests": 6,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "DelegationCycleTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "ReportAndCompleteDelegation",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 69
+        },
+        {
+          "name": "CycleDetection_ThreeAgents",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 102
+        },
+        {
+          "name": "CycleDetectedEventEmitted",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 143
+        }
+      ]
+    },
+    {
+      "name": "DelegationCycleActionTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "RejectDelegation_PreventsCycle",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 172
+        },
+        {
+          "name": "CancelLatest_RemovesCycleEdge",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 225
+        },
+        {
+          "name": "DisabledDelegation_NoOps",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_delegation_cycle.cpp",
+          "line": 271
+        }
+      ]
+    }
+  ]
+}

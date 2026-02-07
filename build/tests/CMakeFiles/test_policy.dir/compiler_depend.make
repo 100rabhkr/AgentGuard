@@ -852,6 +852,7 @@ tests/CMakeFiles/test_policy.dir/unit/test_policy.cpp.o: /Users/saurabhkumar/Dow
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector \
@@ -1047,9 +1048,12 @@ tests/CMakeFiles/test_policy.dir/unit/test_policy.cpp.o: /Users/saurabhkumar/Dow
   /Users/saurabhkumar/Downloads/c++/include/agentguard/ai/token_budget.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/ai/tool_slot.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/config.hpp \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/delegation_tracker.hpp \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/demand_estimator.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/exceptions.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/monitor.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/policy.hpp \
+  /Users/saurabhkumar/Downloads/c++/include/agentguard/progress_tracker.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/request_queue.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/resource.hpp \
   /Users/saurabhkumar/Downloads/c++/include/agentguard/resource_manager.hpp \
@@ -1063,7 +1067,11 @@ tests/CMakeFiles/test_policy.dir/unit/test_policy.cpp.o: /Users/saurabhkumar/Dow
 
 /Users/saurabhkumar/Downloads/c++/include/agentguard/request_queue.hpp:
 
+/Users/saurabhkumar/Downloads/c++/include/agentguard/progress_tracker.hpp:
+
 /Users/saurabhkumar/Downloads/c++/include/agentguard/monitor.hpp:
+
+/Users/saurabhkumar/Downloads/c++/include/agentguard/demand_estimator.hpp:
 
 /Users/saurabhkumar/Downloads/c++/include/agentguard/config.hpp:
 
@@ -1387,6 +1395,8 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__variant/monostate.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
@@ -1592,6 +1602,8 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/aligned_union.h:
+
+/Users/saurabhkumar/Downloads/c++/include/agentguard/delegation_tracker.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/rotate_copy.h:
 

@@ -1,0 +1,52 @@
+{
+  "tests": 8,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "AdaptiveDemandsTest",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "StaticModeBackwardCompatibility",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 75
+        },
+        {
+          "name": "AdaptiveAgentWithoutDeclaredMaxNeed",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 112
+        },
+        {
+          "name": "AdaptiveRequestGranted",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 151
+        },
+        {
+          "name": "ProbabilisticSafetyCheckHasConfidence",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 187
+        },
+        {
+          "name": "MixedStaticAndAdaptiveModes",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 217
+        },
+        {
+          "name": "HybridModeUsesMinOfEstimatedAndDeclared",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 269
+        },
+        {
+          "name": "AdaptiveRequestDeniedWhenUnsafe",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 316
+        },
+        {
+          "name": "DefaultConfidenceFromConfig",
+          "file": "\/Users\/saurabhkumar\/Downloads\/c++\/tests\/integration\/test_adaptive_demands.cpp",
+          "line": 356
+        }
+      ]
+    }
+  ]
+}

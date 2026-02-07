@@ -24,7 +24,21 @@ enum class EventType {
     ResourcesReleased,
     SafetyCheckPerformed,
     UnsafeStateDetected,
-    QueueSizeChanged
+    QueueSizeChanged,
+    // Progress monitoring events
+    AgentProgressReported,
+    AgentStalled,
+    AgentStallResolved,
+    AgentResourcesAutoReleased,
+    // Delegation tracking events
+    DelegationReported,
+    DelegationCompleted,
+    DelegationCancelled,
+    DelegationCycleDetected,
+    // Adaptive demand events
+    DemandEstimateUpdated,
+    ProbabilisticSafetyCheck,
+    AdaptiveDemandModeChanged
 };
 
 struct MonitorEvent {
@@ -37,6 +51,11 @@ struct MonitorEvent {
     std::optional<RequestId> request_id;
     std::optional<ResourceQuantity> quantity;
     std::optional<bool> safety_result;
+
+    // Delegation tracking: the target agent (e.g., delegation "to" agent)
+    std::optional<AgentId> target_agent_id;
+    // Delegation cycle detection: the cycle path
+    std::optional<std::vector<AgentId>> cycle_path;
 };
 
 // Abstract monitor interface

@@ -58,6 +58,23 @@ public:
     // Identify agents whose remaining needs are closest to exhausting available resources.
     std::vector<AgentId> identify_bottleneck_agents(
         const SafetyCheckInput& input) const;
+
+    // Probabilistic safety check: runs Banker's on input whose max_need
+    // values were populated from statistical estimates at the given confidence level.
+    // The caller (ResourceManager) is responsible for building the input with
+    // estimated max needs from DemandEstimator.
+    ProbabilisticSafetyResult check_safety_probabilistic(
+        const SafetyCheckInput& input,
+        double confidence_level) const;
+
+    // Hypothetical probabilistic check: "if we grant this request, is the
+    // resulting state safe under probabilistic max-need estimates?"
+    ProbabilisticSafetyResult check_hypothetical_probabilistic(
+        const SafetyCheckInput& current_state,
+        AgentId agent,
+        ResourceTypeId resource,
+        ResourceQuantity quantity,
+        double confidence_level) const;
 };
 
 } // namespace agentguard

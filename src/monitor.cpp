@@ -10,19 +10,30 @@ namespace {
 
 const char* to_string(EventType t) {
     switch (t) {
-        case EventType::AgentRegistered:       return "AgentRegistered";
-        case EventType::AgentDeregistered:      return "AgentDeregistered";
-        case EventType::ResourceRegistered:     return "ResourceRegistered";
-        case EventType::ResourceCapacityChanged:return "ResourceCapacityChanged";
-        case EventType::RequestSubmitted:       return "RequestSubmitted";
-        case EventType::RequestGranted:         return "RequestGranted";
-        case EventType::RequestDenied:          return "RequestDenied";
-        case EventType::RequestTimedOut:        return "RequestTimedOut";
-        case EventType::RequestCancelled:       return "RequestCancelled";
-        case EventType::ResourcesReleased:      return "ResourcesReleased";
-        case EventType::SafetyCheckPerformed:   return "SafetyCheckPerformed";
-        case EventType::UnsafeStateDetected:    return "UnsafeStateDetected";
-        case EventType::QueueSizeChanged:       return "QueueSizeChanged";
+        case EventType::AgentRegistered:         return "AgentRegistered";
+        case EventType::AgentDeregistered:        return "AgentDeregistered";
+        case EventType::ResourceRegistered:       return "ResourceRegistered";
+        case EventType::ResourceCapacityChanged:  return "ResourceCapacityChanged";
+        case EventType::RequestSubmitted:         return "RequestSubmitted";
+        case EventType::RequestGranted:           return "RequestGranted";
+        case EventType::RequestDenied:            return "RequestDenied";
+        case EventType::RequestTimedOut:          return "RequestTimedOut";
+        case EventType::RequestCancelled:         return "RequestCancelled";
+        case EventType::ResourcesReleased:        return "ResourcesReleased";
+        case EventType::SafetyCheckPerformed:     return "SafetyCheckPerformed";
+        case EventType::UnsafeStateDetected:      return "UnsafeStateDetected";
+        case EventType::QueueSizeChanged:         return "QueueSizeChanged";
+        case EventType::AgentProgressReported:    return "AgentProgressReported";
+        case EventType::AgentStalled:             return "AgentStalled";
+        case EventType::AgentStallResolved:       return "AgentStallResolved";
+        case EventType::AgentResourcesAutoReleased: return "AgentResourcesAutoReleased";
+        case EventType::DelegationReported:       return "DelegationReported";
+        case EventType::DelegationCompleted:      return "DelegationCompleted";
+        case EventType::DelegationCancelled:      return "DelegationCancelled";
+        case EventType::DelegationCycleDetected:  return "DelegationCycleDetected";
+        case EventType::DemandEstimateUpdated:    return "DemandEstimateUpdated";
+        case EventType::ProbabilisticSafetyCheck: return "ProbabilisticSafetyCheck";
+        case EventType::AdaptiveDemandModeChanged:return "AdaptiveDemandModeChanged";
     }
     return "Unknown";
 }
@@ -35,6 +46,10 @@ bool is_important_event(EventType t) {
         case EventType::UnsafeStateDetected:
         case EventType::AgentRegistered:
         case EventType::AgentDeregistered:
+        case EventType::AgentStalled:
+        case EventType::AgentStallResolved:
+        case EventType::AgentResourcesAutoReleased:
+        case EventType::DelegationCycleDetected:
             return true;
         default:
             return false;
@@ -69,6 +84,9 @@ void ConsoleMonitor::on_event(const MonitorEvent& event) {
     }
     if (event.safety_result.has_value()) {
         std::cout << " safe=" << (event.safety_result.value() ? "true" : "false");
+    }
+    if (event.target_agent_id.has_value()) {
+        std::cout << " target_agent=" << event.target_agent_id.value();
     }
 
     if (!event.message.empty()) {

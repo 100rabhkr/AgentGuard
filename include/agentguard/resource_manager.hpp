@@ -8,6 +8,9 @@
 #include "agentguard/monitor.hpp"
 #include "agentguard/policy.hpp"
 #include "agentguard/config.hpp"
+#include "agentguard/progress_tracker.hpp"
+#include "agentguard/delegation_tracker.hpp"
+#include "agentguard/demand_estimator.hpp"
 
 #include <atomic>
 #include <condition_variable>
@@ -88,6 +91,33 @@ public:
     SystemSnapshot get_snapshot() const;
     std::size_t pending_request_count() const;
 
+    // ==================== Progress Monitoring ====================
+
+    void report_progress(AgentId id, const std::string& metric, double value);
+    void set_agent_stall_threshold(AgentId id, Duration threshold);
+    bool is_agent_stalled(AgentId id) const;
+    std::vector<AgentId> get_stalled_agents() const;
+
+    // ==================== Delegation Tracking ====================
+
+    DelegationResult report_delegation(AgentId from, AgentId to,
+                                       const std::string& task_desc = "");
+    void complete_delegation(AgentId from, AgentId to);
+    void cancel_delegation(AgentId from, AgentId to);
+    std::vector<DelegationInfo> get_all_delegations() const;
+    std::optional<std::vector<AgentId>> find_delegation_cycle() const;
+
+    // ==================== Adaptive Demands ====================
+
+    void set_agent_demand_mode(AgentId id, DemandMode mode);
+    ProbabilisticSafetyResult check_safety_probabilistic(double confidence) const;
+    ProbabilisticSafetyResult check_safety_probabilistic() const;  // uses default confidence
+    RequestStatus request_resources_adaptive(
+        AgentId agent_id,
+        ResourceTypeId resource_type,
+        ResourceQuantity quantity,
+        std::optional<Duration> timeout = std::nullopt);
+
     // ==================== Configuration ====================
 
     void set_scheduling_policy(std::unique_ptr<SchedulingPolicy> policy);
@@ -111,6 +141,11 @@ private:
     std::unique_ptr<SchedulingPolicy> scheduling_policy_;
     std::shared_ptr<Monitor> monitor_;
 
+    // Novel subsystems
+    std::unique_ptr<ProgressTracker> progress_tracker_;
+    std::unique_ptr<DelegationTracker> delegation_tracker_;
+    DemandEstimator demand_estimator_;
+
     // Background processor
     std::thread processor_thread_;
     std::atomic<bool> running_{false};
@@ -121,6 +156,7 @@ private:
 
     // Internal helpers
     SafetyCheckInput build_safety_input() const;
+    SafetyCheckInput build_adaptive_safety_input(double confidence_level) const;
     void process_queue_loop();
     void try_grant_pending_requests();
     bool try_grant_single(AgentId agent_id, ResourceTypeId resource_type,

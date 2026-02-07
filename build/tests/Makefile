@@ -256,6 +256,62 @@ test_policy/fast:
 .PHONY : test_policy/fast
 
 # Convenience name for target.
+tests/CMakeFiles/test_progress_tracker.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_progress_tracker.dir/rule
+.PHONY : tests/CMakeFiles/test_progress_tracker.dir/rule
+
+# Convenience name for target.
+test_progress_tracker: tests/CMakeFiles/test_progress_tracker.dir/rule
+.PHONY : test_progress_tracker
+
+# fast build rule for target.
+test_progress_tracker/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_tracker.dir/build.make tests/CMakeFiles/test_progress_tracker.dir/build
+.PHONY : test_progress_tracker/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_delegation_tracker.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_delegation_tracker.dir/rule
+.PHONY : tests/CMakeFiles/test_delegation_tracker.dir/rule
+
+# Convenience name for target.
+test_delegation_tracker: tests/CMakeFiles/test_delegation_tracker.dir/rule
+.PHONY : test_delegation_tracker
+
+# fast build rule for target.
+test_delegation_tracker/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_tracker.dir/build.make tests/CMakeFiles/test_delegation_tracker.dir/build
+.PHONY : test_delegation_tracker/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_demand_estimator.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_demand_estimator.dir/rule
+.PHONY : tests/CMakeFiles/test_demand_estimator.dir/rule
+
+# Convenience name for target.
+test_demand_estimator: tests/CMakeFiles/test_demand_estimator.dir/rule
+.PHONY : test_demand_estimator
+
+# fast build rule for target.
+test_demand_estimator/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_demand_estimator.dir/build.make tests/CMakeFiles/test_demand_estimator.dir/build
+.PHONY : test_demand_estimator/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_probabilistic_safety.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_probabilistic_safety.dir/rule
+.PHONY : tests/CMakeFiles/test_probabilistic_safety.dir/rule
+
+# Convenience name for target.
+test_probabilistic_safety: tests/CMakeFiles/test_probabilistic_safety.dir/rule
+.PHONY : test_probabilistic_safety
+
+# fast build rule for target.
+test_probabilistic_safety/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_probabilistic_safety.dir/build.make tests/CMakeFiles/test_probabilistic_safety.dir/build
+.PHONY : test_probabilistic_safety/fast
+
+# Convenience name for target.
 tests/CMakeFiles/test_deadlock_prevention.dir/rule:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_deadlock_prevention.dir/rule
 .PHONY : tests/CMakeFiles/test_deadlock_prevention.dir/rule
@@ -282,6 +338,72 @@ test_concurrent_agents: tests/CMakeFiles/test_concurrent_agents.dir/rule
 test_concurrent_agents/fast:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_concurrent_agents.dir/build.make tests/CMakeFiles/test_concurrent_agents.dir/build
 .PHONY : test_concurrent_agents/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_delegation_cycle.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_delegation_cycle.dir/rule
+.PHONY : tests/CMakeFiles/test_delegation_cycle.dir/rule
+
+# Convenience name for target.
+test_delegation_cycle: tests/CMakeFiles/test_delegation_cycle.dir/rule
+.PHONY : test_delegation_cycle
+
+# fast build rule for target.
+test_delegation_cycle/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_cycle.dir/build.make tests/CMakeFiles/test_delegation_cycle.dir/build
+.PHONY : test_delegation_cycle/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_adaptive_demands.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_adaptive_demands.dir/rule
+.PHONY : tests/CMakeFiles/test_adaptive_demands.dir/rule
+
+# Convenience name for target.
+test_adaptive_demands: tests/CMakeFiles/test_adaptive_demands.dir/rule
+.PHONY : test_adaptive_demands
+
+# fast build rule for target.
+test_adaptive_demands/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adaptive_demands.dir/build.make tests/CMakeFiles/test_adaptive_demands.dir/build
+.PHONY : test_adaptive_demands/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_progress_monitor.dir/rule:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_progress_monitor.dir/rule
+.PHONY : tests/CMakeFiles/test_progress_monitor.dir/rule
+
+# Convenience name for target.
+test_progress_monitor: tests/CMakeFiles/test_progress_monitor.dir/rule
+.PHONY : test_progress_monitor
+
+# fast build rule for target.
+test_progress_monitor/fast:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_monitor.dir/build.make tests/CMakeFiles/test_progress_monitor.dir/build
+.PHONY : test_progress_monitor/fast
+
+integration/test_adaptive_demands.o: integration/test_adaptive_demands.cpp.o
+.PHONY : integration/test_adaptive_demands.o
+
+# target to build an object file
+integration/test_adaptive_demands.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adaptive_demands.dir/build.make tests/CMakeFiles/test_adaptive_demands.dir/integration/test_adaptive_demands.cpp.o
+.PHONY : integration/test_adaptive_demands.cpp.o
+
+integration/test_adaptive_demands.i: integration/test_adaptive_demands.cpp.i
+.PHONY : integration/test_adaptive_demands.i
+
+# target to preprocess a source file
+integration/test_adaptive_demands.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adaptive_demands.dir/build.make tests/CMakeFiles/test_adaptive_demands.dir/integration/test_adaptive_demands.cpp.i
+.PHONY : integration/test_adaptive_demands.cpp.i
+
+integration/test_adaptive_demands.s: integration/test_adaptive_demands.cpp.s
+.PHONY : integration/test_adaptive_demands.s
+
+# target to generate assembly for a file
+integration/test_adaptive_demands.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_adaptive_demands.dir/build.make tests/CMakeFiles/test_adaptive_demands.dir/integration/test_adaptive_demands.cpp.s
+.PHONY : integration/test_adaptive_demands.cpp.s
 
 integration/test_concurrent_agents.o: integration/test_concurrent_agents.cpp.o
 .PHONY : integration/test_concurrent_agents.o
@@ -331,6 +453,54 @@ integration/test_deadlock_prevention.cpp.s:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_deadlock_prevention.dir/build.make tests/CMakeFiles/test_deadlock_prevention.dir/integration/test_deadlock_prevention.cpp.s
 .PHONY : integration/test_deadlock_prevention.cpp.s
 
+integration/test_delegation_cycle.o: integration/test_delegation_cycle.cpp.o
+.PHONY : integration/test_delegation_cycle.o
+
+# target to build an object file
+integration/test_delegation_cycle.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_cycle.dir/build.make tests/CMakeFiles/test_delegation_cycle.dir/integration/test_delegation_cycle.cpp.o
+.PHONY : integration/test_delegation_cycle.cpp.o
+
+integration/test_delegation_cycle.i: integration/test_delegation_cycle.cpp.i
+.PHONY : integration/test_delegation_cycle.i
+
+# target to preprocess a source file
+integration/test_delegation_cycle.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_cycle.dir/build.make tests/CMakeFiles/test_delegation_cycle.dir/integration/test_delegation_cycle.cpp.i
+.PHONY : integration/test_delegation_cycle.cpp.i
+
+integration/test_delegation_cycle.s: integration/test_delegation_cycle.cpp.s
+.PHONY : integration/test_delegation_cycle.s
+
+# target to generate assembly for a file
+integration/test_delegation_cycle.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_cycle.dir/build.make tests/CMakeFiles/test_delegation_cycle.dir/integration/test_delegation_cycle.cpp.s
+.PHONY : integration/test_delegation_cycle.cpp.s
+
+integration/test_progress_monitor.o: integration/test_progress_monitor.cpp.o
+.PHONY : integration/test_progress_monitor.o
+
+# target to build an object file
+integration/test_progress_monitor.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_monitor.dir/build.make tests/CMakeFiles/test_progress_monitor.dir/integration/test_progress_monitor.cpp.o
+.PHONY : integration/test_progress_monitor.cpp.o
+
+integration/test_progress_monitor.i: integration/test_progress_monitor.cpp.i
+.PHONY : integration/test_progress_monitor.i
+
+# target to preprocess a source file
+integration/test_progress_monitor.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_monitor.dir/build.make tests/CMakeFiles/test_progress_monitor.dir/integration/test_progress_monitor.cpp.i
+.PHONY : integration/test_progress_monitor.cpp.i
+
+integration/test_progress_monitor.s: integration/test_progress_monitor.cpp.s
+.PHONY : integration/test_progress_monitor.s
+
+# target to generate assembly for a file
+integration/test_progress_monitor.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_monitor.dir/build.make tests/CMakeFiles/test_progress_monitor.dir/integration/test_progress_monitor.cpp.s
+.PHONY : integration/test_progress_monitor.cpp.s
+
 unit/test_agent.o: unit/test_agent.cpp.o
 .PHONY : unit/test_agent.o
 
@@ -355,6 +525,54 @@ unit/test_agent.cpp.s:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_agent.dir/build.make tests/CMakeFiles/test_agent.dir/unit/test_agent.cpp.s
 .PHONY : unit/test_agent.cpp.s
 
+unit/test_delegation_tracker.o: unit/test_delegation_tracker.cpp.o
+.PHONY : unit/test_delegation_tracker.o
+
+# target to build an object file
+unit/test_delegation_tracker.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_tracker.dir/build.make tests/CMakeFiles/test_delegation_tracker.dir/unit/test_delegation_tracker.cpp.o
+.PHONY : unit/test_delegation_tracker.cpp.o
+
+unit/test_delegation_tracker.i: unit/test_delegation_tracker.cpp.i
+.PHONY : unit/test_delegation_tracker.i
+
+# target to preprocess a source file
+unit/test_delegation_tracker.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_tracker.dir/build.make tests/CMakeFiles/test_delegation_tracker.dir/unit/test_delegation_tracker.cpp.i
+.PHONY : unit/test_delegation_tracker.cpp.i
+
+unit/test_delegation_tracker.s: unit/test_delegation_tracker.cpp.s
+.PHONY : unit/test_delegation_tracker.s
+
+# target to generate assembly for a file
+unit/test_delegation_tracker.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_delegation_tracker.dir/build.make tests/CMakeFiles/test_delegation_tracker.dir/unit/test_delegation_tracker.cpp.s
+.PHONY : unit/test_delegation_tracker.cpp.s
+
+unit/test_demand_estimator.o: unit/test_demand_estimator.cpp.o
+.PHONY : unit/test_demand_estimator.o
+
+# target to build an object file
+unit/test_demand_estimator.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_demand_estimator.dir/build.make tests/CMakeFiles/test_demand_estimator.dir/unit/test_demand_estimator.cpp.o
+.PHONY : unit/test_demand_estimator.cpp.o
+
+unit/test_demand_estimator.i: unit/test_demand_estimator.cpp.i
+.PHONY : unit/test_demand_estimator.i
+
+# target to preprocess a source file
+unit/test_demand_estimator.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_demand_estimator.dir/build.make tests/CMakeFiles/test_demand_estimator.dir/unit/test_demand_estimator.cpp.i
+.PHONY : unit/test_demand_estimator.cpp.i
+
+unit/test_demand_estimator.s: unit/test_demand_estimator.cpp.s
+.PHONY : unit/test_demand_estimator.s
+
+# target to generate assembly for a file
+unit/test_demand_estimator.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_demand_estimator.dir/build.make tests/CMakeFiles/test_demand_estimator.dir/unit/test_demand_estimator.cpp.s
+.PHONY : unit/test_demand_estimator.cpp.s
+
 unit/test_policy.o: unit/test_policy.cpp.o
 .PHONY : unit/test_policy.o
 
@@ -378,6 +596,54 @@ unit/test_policy.s: unit/test_policy.cpp.s
 unit/test_policy.cpp.s:
 	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_policy.dir/build.make tests/CMakeFiles/test_policy.dir/unit/test_policy.cpp.s
 .PHONY : unit/test_policy.cpp.s
+
+unit/test_probabilistic_safety.o: unit/test_probabilistic_safety.cpp.o
+.PHONY : unit/test_probabilistic_safety.o
+
+# target to build an object file
+unit/test_probabilistic_safety.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_probabilistic_safety.dir/build.make tests/CMakeFiles/test_probabilistic_safety.dir/unit/test_probabilistic_safety.cpp.o
+.PHONY : unit/test_probabilistic_safety.cpp.o
+
+unit/test_probabilistic_safety.i: unit/test_probabilistic_safety.cpp.i
+.PHONY : unit/test_probabilistic_safety.i
+
+# target to preprocess a source file
+unit/test_probabilistic_safety.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_probabilistic_safety.dir/build.make tests/CMakeFiles/test_probabilistic_safety.dir/unit/test_probabilistic_safety.cpp.i
+.PHONY : unit/test_probabilistic_safety.cpp.i
+
+unit/test_probabilistic_safety.s: unit/test_probabilistic_safety.cpp.s
+.PHONY : unit/test_probabilistic_safety.s
+
+# target to generate assembly for a file
+unit/test_probabilistic_safety.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_probabilistic_safety.dir/build.make tests/CMakeFiles/test_probabilistic_safety.dir/unit/test_probabilistic_safety.cpp.s
+.PHONY : unit/test_probabilistic_safety.cpp.s
+
+unit/test_progress_tracker.o: unit/test_progress_tracker.cpp.o
+.PHONY : unit/test_progress_tracker.o
+
+# target to build an object file
+unit/test_progress_tracker.cpp.o:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_tracker.dir/build.make tests/CMakeFiles/test_progress_tracker.dir/unit/test_progress_tracker.cpp.o
+.PHONY : unit/test_progress_tracker.cpp.o
+
+unit/test_progress_tracker.i: unit/test_progress_tracker.cpp.i
+.PHONY : unit/test_progress_tracker.i
+
+# target to preprocess a source file
+unit/test_progress_tracker.cpp.i:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_tracker.dir/build.make tests/CMakeFiles/test_progress_tracker.dir/unit/test_progress_tracker.cpp.i
+.PHONY : unit/test_progress_tracker.cpp.i
+
+unit/test_progress_tracker.s: unit/test_progress_tracker.cpp.s
+.PHONY : unit/test_progress_tracker.s
+
+# target to generate assembly for a file
+unit/test_progress_tracker.cpp.s:
+	cd /Users/saurabhkumar/Downloads/c++/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_progress_tracker.dir/build.make tests/CMakeFiles/test_progress_tracker.dir/unit/test_progress_tracker.cpp.s
+.PHONY : unit/test_progress_tracker.cpp.s
 
 unit/test_request_queue.o: unit/test_request_queue.cpp.o
 .PHONY : unit/test_request_queue.o
@@ -488,26 +754,54 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... test_adaptive_demands"
 	@echo "... test_agent"
 	@echo "... test_concurrent_agents"
 	@echo "... test_deadlock_prevention"
+	@echo "... test_delegation_cycle"
+	@echo "... test_delegation_tracker"
+	@echo "... test_demand_estimator"
 	@echo "... test_policy"
+	@echo "... test_probabilistic_safety"
+	@echo "... test_progress_monitor"
+	@echo "... test_progress_tracker"
 	@echo "... test_request_queue"
 	@echo "... test_resource"
 	@echo "... test_resource_manager"
 	@echo "... test_safety_checker"
+	@echo "... integration/test_adaptive_demands.o"
+	@echo "... integration/test_adaptive_demands.i"
+	@echo "... integration/test_adaptive_demands.s"
 	@echo "... integration/test_concurrent_agents.o"
 	@echo "... integration/test_concurrent_agents.i"
 	@echo "... integration/test_concurrent_agents.s"
 	@echo "... integration/test_deadlock_prevention.o"
 	@echo "... integration/test_deadlock_prevention.i"
 	@echo "... integration/test_deadlock_prevention.s"
+	@echo "... integration/test_delegation_cycle.o"
+	@echo "... integration/test_delegation_cycle.i"
+	@echo "... integration/test_delegation_cycle.s"
+	@echo "... integration/test_progress_monitor.o"
+	@echo "... integration/test_progress_monitor.i"
+	@echo "... integration/test_progress_monitor.s"
 	@echo "... unit/test_agent.o"
 	@echo "... unit/test_agent.i"
 	@echo "... unit/test_agent.s"
+	@echo "... unit/test_delegation_tracker.o"
+	@echo "... unit/test_delegation_tracker.i"
+	@echo "... unit/test_delegation_tracker.s"
+	@echo "... unit/test_demand_estimator.o"
+	@echo "... unit/test_demand_estimator.i"
+	@echo "... unit/test_demand_estimator.s"
 	@echo "... unit/test_policy.o"
 	@echo "... unit/test_policy.i"
 	@echo "... unit/test_policy.s"
+	@echo "... unit/test_probabilistic_safety.o"
+	@echo "... unit/test_probabilistic_safety.i"
+	@echo "... unit/test_probabilistic_safety.s"
+	@echo "... unit/test_progress_tracker.o"
+	@echo "... unit/test_progress_tracker.i"
+	@echo "... unit/test_progress_tracker.s"
 	@echo "... unit/test_request_queue.o"
 	@echo "... unit/test_request_queue.i"
 	@echo "... unit/test_request_queue.s"

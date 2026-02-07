@@ -19,8 +19,15 @@
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_resource_manager.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_request_queue.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_policy.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_progress_tracker.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_delegation_tracker.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_demand_estimator.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_probabilistic_safety.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_deadlock_prevention.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_concurrent_agents.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_delegation_cycle.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_adaptive_demands.dir
+/Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test_progress_monitor.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/test.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/edit_cache.dir
 /Users/saurabhkumar/Downloads/c++/build/tests/CMakeFiles/rebuild_cache.dir
@@ -57,6 +64,7 @@
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/example_llm_rate_limits.dir
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/example_tool_sharing.dir
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/example_priority_agents.dir
+/Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/example_adaptive_agents.dir
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/test.dir
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/edit_cache.dir
 /Users/saurabhkumar/Downloads/c++/build/examples/CMakeFiles/rebuild_cache.dir

@@ -1,15 +1,22 @@
 # AgentGuard
 
-**Deadlock prevention for multi-AI-agent systems.**
+**Deadlock prevention for multi-AI-agent systems -- beyond the textbook.**
 
-AgentGuard is a C++17 library that applies the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) to prevent deadlocks when multiple AI agents compete for shared resources such as API rate limits, tool access slots, token budgets, database connections, and GPU compute.
+AgentGuard is a C++17 library that started as a clean implementation of the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) (Dijkstra, 1965) for preventing deadlocks when multiple AI agents compete for shared resources. But classical Banker's has real gaps when applied to AI agents. We identified three, and built solutions for each:
 
-Before granting any resource request, AgentGuard checks whether doing so would leave the system in a *safe state* -- one where every agent can still finish. If granting would risk deadlock, the request is queued or denied. This guarantee holds even with agents joining and leaving at runtime, concurrent multi-threaded access, and multiple resource types requested atomically.
+1. **Agents get stuck with no one noticing.** The #1 complaint across LangGraph, CrewAI, and AutoGen is infinite loops. Current solutions are dumb counters (kill after N steps). AgentGuard's **Progress Monitor** detects stuck agents using progress invariants and auto-releases their resources.
+
+2. **Authority deadlocks are invisible.** Agent A delegates to B, B delegates to C, C delegates back to A -- everyone is politely waiting, no resource is held, and no existing tool detects it. AgentGuard's **Delegation Tracker** maintains a directed graph of active delegations and detects cycles in real time.
+
+3. **AI agents don't know their max resource needs.** Banker's requires every process to declare its maximum needs upfront. That's fine for OS processes, but an LLM agent has no idea how many API calls it will make. AgentGuard's **Demand Estimator** learns resource patterns at runtime and runs a probabilistic Banker's Algorithm -- no upfront declarations needed.
+
+The core guarantee still holds: before granting any resource request, AgentGuard checks whether doing so would leave the system in a *safe state*. If granting would risk deadlock, the request is queued or denied. This works with agents joining and leaving at runtime, concurrent multi-threaded access, and multiple resource types requested atomically.
 
 ## Table of Contents
 
 - [The Problem](#the-problem)
 - [How It Works](#how-it-works)
+- [What Makes AgentGuard Different](#what-makes-agentguard-different)
 - [Quick Start](#quick-start)
 - [Building](#building)
 - [API Reference](#api-reference)
@@ -17,6 +24,9 @@ Before granting any resource request, AgentGuard checks whether doing so would l
   - [Agent](#agent)
   - [Resource](#resource)
   - [SafetyChecker](#safetychecker)
+  - [Progress Monitoring](#progress-monitoring)
+  - [Delegation Tracking](#delegation-tracking)
+  - [Adaptive Demands](#adaptive-demands)
   - [Scheduling Policies](#scheduling-policies)
   - [Monitoring](#monitoring)
   - [AI-Specific Resource Types](#ai-specific-resource-types)
@@ -50,13 +60,39 @@ AgentGuard eliminates this class of failure.
 
 AgentGuard adapts the Banker's Algorithm from operating systems theory:
 
-1. **Each agent declares its maximum resource needs** when it registers.
+1. **Each agent declares its maximum resource needs** when it registers -- or, in adaptive mode, the system learns them automatically from usage patterns.
 2. **Before granting any request**, the `SafetyChecker` simulates: "If I grant this, can all agents still complete?" It does this by iteratively finding agents whose remaining needs can be met with available resources, simulating their completion, and reclaiming their resources.
 3. **If the resulting state is safe** (a valid completion sequence exists), the request is granted immediately.
 4. **If the resulting state is unsafe**, the request is queued and re-evaluated whenever resources are released.
 5. **Agents join and leave dynamically** -- unlike classical Banker's, which assumes a fixed process set.
+6. **Stuck agents are detected** via progress monitoring, and their resources are auto-released to unblock others.
+7. **Authority deadlock cycles** (A delegates to B delegates to C delegates to A) are detected in real time and can be automatically broken.
 
 The safety check runs in O(n^2 * m) time where n = number of agents and m = number of resource types. For typical multi-agent systems (n < 100, m < 50), this completes in microseconds.
+
+## What Makes AgentGuard Different
+
+We started with a textbook Banker's Algorithm. It worked, but it wasn't enough. Real AI agent systems fail in ways that Dijkstra never anticipated.
+
+### The journey
+
+**V1: Classical Banker's.** We implemented the full algorithm with dynamic agent registration, multi-resource batch requests, pluggable scheduling policies, and comprehensive monitoring. 109 tests, clean architecture. But when we looked at how multi-agent systems actually fail in production, three gaps became obvious.
+
+**Gap 1: Agents hang and nobody notices.** An LLM agent enters an infinite reasoning loop, or a tool call blocks forever. The agent holds resources, other agents wait, and the whole system grinds to a halt. Every framework has this problem -- LangGraph, CrewAI, AutoGen. Their solution? Kill after N iterations. That's a timer, not a safety system.
+
+**Gap 2: Authority deadlocks.** Agent A says "I need B to handle this." B says "C is better suited." C says "Let me check with A." Nobody holds a resource. Nobody is blocked in the traditional sense. But the system is completely stuck. No existing tool detects this.
+
+**Gap 3: Banker's requires crystal balls.** The algorithm needs every process to declare its maximum resource needs upfront. An OS process can do this (it knows it needs at most N file descriptors). An LLM agent cannot -- it has no idea how many API calls a complex research task will require. This makes classical Banker's impractical for AI.
+
+**V2: What we built.**
+
+| Feature | Solves | How |
+|---------|--------|-----|
+| **Progress Monitor** | Gap 1: Stuck agents | Tracks named progress metrics per agent. A background thread detects stalls (no progress within a configurable threshold). On stall, resources are auto-released and events are emitted. |
+| **Delegation Tracker** | Gap 2: Authority deadlocks | Maintains a directed graph of active delegations. On each new delegation, runs BFS cycle detection from the target back to the source. Configurable actions: notify, reject the delegation, or cancel the latest edge. |
+| **Demand Estimator** | Gap 3: Unknown max needs | Records every resource request per agent. Computes a statistical estimate of max needs: `mean + k * stddev` where k comes from the desired confidence level (inverse normal CDF). Runs Banker's with these estimates instead of declared maximums. Cold-start handling included. |
+
+All three features are opt-in (disabled by default), backward-compatible, and independently toggleable. The original 109 tests pass unchanged.
 
 ## Quick Start
 
@@ -154,7 +190,7 @@ cd build
 ctest --output-on-failure
 ```
 
-All 109 tests should pass.
+All 189 tests should pass.
 
 ### Run examples
 
@@ -164,6 +200,7 @@ cd build
 ./examples/example_llm_rate_limits
 ./examples/example_tool_sharing
 ./examples/example_priority_agents
+./examples/example_adaptive_agents
 ```
 
 ### Install
@@ -350,6 +387,109 @@ std::vector<RequestId> grantable = checker.find_grantable_requests(input, candid
 std::vector<AgentId> bottlenecks = checker.identify_bottleneck_agents(input);
 ```
 
+### Progress Monitoring
+
+Detect stuck agents and auto-release their resources.
+
+```cpp
+// Enable in config
+Config cfg;
+cfg.progress.enabled = true;
+cfg.progress.default_stall_threshold = std::chrono::seconds(120);
+cfg.progress.check_interval = std::chrono::seconds(5);
+cfg.progress.auto_release_on_stall = true;   // free resources from stuck agents
+
+ResourceManager manager(cfg);
+manager.start();
+
+// Agents report progress as they work
+manager.report_progress(agent_id, "steps_completed", 5);
+manager.report_progress(agent_id, "tokens_generated", 1200);
+
+// Per-agent stall threshold override
+manager.set_agent_stall_threshold(agent_id, std::chrono::seconds(30));
+
+// Query stall state
+bool stuck = manager.is_agent_stalled(agent_id);
+std::vector<AgentId> stalled = manager.get_stalled_agents();
+```
+
+If an agent stops reporting progress for longer than its stall threshold, AgentGuard emits `AgentStalled` and (if configured) releases all resources held by that agent. When the agent resumes progress, `AgentStallResolved` is emitted.
+
+### Delegation Tracking
+
+Detect authority deadlock cycles where agents delegate to each other in a loop.
+
+```cpp
+// Enable in config
+Config cfg;
+cfg.delegation.enabled = true;
+cfg.delegation.cycle_action = DelegationCycleAction::RejectDelegation;
+// Options: NotifyOnly, RejectDelegation, CancelLatest
+
+ResourceManager manager(cfg);
+
+// Report delegations as they happen
+DelegationResult r = manager.report_delegation(agent_a, agent_b, "Summarize document");
+// r.accepted     -- true if the delegation was added
+// r.cycle_detected -- true if this delegation would create a cycle
+// r.cycle_path   -- the cycle (e.g., [A, B, C, A])
+
+// Complete or cancel delegations
+manager.complete_delegation(agent_a, agent_b);
+manager.cancel_delegation(agent_b, agent_c);
+
+// Query delegation state
+std::vector<DelegationInfo> all = manager.get_all_delegations();
+std::optional<std::vector<AgentId>> cycle = manager.find_delegation_cycle();
+```
+
+| Cycle Action | Behavior |
+|---|---|
+| `NotifyOnly` | Accept the delegation, emit `DelegationCycleDetected` event |
+| `RejectDelegation` | Refuse to add the edge, return `accepted=false` |
+| `CancelLatest` | Add then immediately remove the edge, emit `DelegationCancelled` |
+
+### Adaptive Demands
+
+Run Banker's Algorithm without requiring agents to declare max resource needs upfront.
+
+```cpp
+// Enable in config
+Config cfg;
+cfg.adaptive.enabled = true;
+cfg.adaptive.default_confidence_level = 0.95;   // 95th percentile estimate
+cfg.adaptive.cold_start_default_demand = 3;      // assume 3 until we have data
+cfg.adaptive.cold_start_headroom_factor = 1.5;   // multiply first observation by 1.5x
+cfg.adaptive.adaptive_headroom_factor = 1.2;     // cap at 1.2x observed max cumulative
+
+ResourceManager manager(cfg);
+
+// Set agents to adaptive mode (no declare_max_need needed)
+manager.set_agent_demand_mode(agent_id, DemandMode::Adaptive);
+
+// Use adaptive resource requests
+auto status = manager.request_resources_adaptive(agent_id, resource_type, 3, 5s);
+
+// Check system safety probabilistically
+ProbabilisticSafetyResult result = manager.check_safety_probabilistic(0.95);
+// result.is_safe            -- safe at this confidence level?
+// result.confidence_level   -- the confidence used
+// result.estimated_max_needs -- what the estimator computed per agent
+// result.safe_sequence      -- completion order (if safe)
+
+// No-argument version uses config default confidence
+auto result2 = manager.check_safety_probabilistic();
+```
+
+Three demand modes are available per agent:
+
+| Mode | Behavior |
+|---|---|
+| `Static` | Classical Banker's: uses `declare_max_need()` only (default, backward-compatible) |
+| `Adaptive` | No upfront declaration needed. Max needs estimated from usage history. |
+| `Hybrid` | Uses the minimum of the statistical estimate and the declared max need. |
+
 ### Scheduling Policies
 
 Control the order in which queued requests are processed. All implement the `SchedulingPolicy` interface.
@@ -429,9 +569,19 @@ manager.set_monitor(composite);
 #### Event types
 
 ```
+// Core events
 AgentRegistered, AgentDeregistered, ResourceRegistered, ResourceCapacityChanged,
 RequestSubmitted, RequestGranted, RequestDenied, RequestTimedOut, RequestCancelled,
-ResourcesReleased, SafetyCheckPerformed, UnsafeStateDetected, QueueSizeChanged
+ResourcesReleased, SafetyCheckPerformed, UnsafeStateDetected, QueueSizeChanged,
+
+// Progress monitoring
+AgentProgressReported, AgentStalled, AgentStallResolved, AgentResourcesAutoReleased,
+
+// Delegation tracking
+DelegationReported, DelegationCompleted, DelegationCancelled, DelegationCycleDetected,
+
+// Adaptive demands
+DemandEstimateUpdated, ProbabilisticSafetyCheck, AdaptiveDemandModeChanged
 ```
 
 #### Custom monitors
@@ -591,6 +741,18 @@ Minimal example: 2 resources, 3 agents, sequential requests with a `ConsoleMonit
 ./examples/example_priority_agents
 ```
 
+### 05 -- Adaptive Agents (all three novel features)
+
+3 agents in adaptive demand mode (no `declare_max_need` calls) sharing API tokens and tool slots. Demonstrates all three novel features working together:
+
+- **Adaptive demands**: agents request resources without upfront max declarations; a probabilistic safety check passes at 90% confidence.
+- **Delegation cycle detection**: A delegates to B, B delegates to C, C tries to delegate back to A -- cycle detected and rejected.
+- **Progress monitoring**: Agent B stops reporting progress, is detected as stalled within 200ms, and its resources are auto-released.
+
+```bash
+./examples/example_adaptive_agents
+```
+
 ## Architecture
 
 ### Request processing flow
@@ -638,7 +800,7 @@ Agent Thread                 ResourceManager                SafetyChecker
 
 ## Testing
 
-109 tests across unit, integration, and concurrent categories:
+189 tests across unit, integration, and concurrent categories:
 
 | Category | Tests | Coverage |
 |---|---|---|
@@ -648,12 +810,19 @@ Agent Thread                 ResourceManager                SafetyChecker
 | **Unit: ResourceManager** | 23 | Registration, requests, releases, batch, snapshots, exceptions |
 | **Unit: RequestQueue** | 17 | Priority ordering, cancellation, timeouts, capacity |
 | **Unit: Policy** | 10 | FIFO, Priority, Fairness, Deadline, ShortestNeed |
+| **Unit: ProgressTracker** | 10 | Registration, stall detection/resolution, per-agent thresholds, monitor events |
+| **Unit: DelegationTracker** | 18 | Cycles (2-node, 3-node, self), notify/reject/cancel actions, deregister cleanup |
+| **Unit: DemandEstimator** | 22 | Statistics (mean/variance/stddev), cold start, confidence levels, rolling window, modes |
+| **Unit: Probabilistic Safety** | 10 | Probabilistic wrappers, confidence recording, hypothetical checks, multi-resource |
 | **Integration: Deadlock Prevention** | 4 | Dining philosophers, circular wait, incremental requests |
 | **Integration: Concurrent** | 5 | 10-agent stress test, registration races, batch concurrency, async, high contention |
+| **Integration: Delegation Cycles** | 6 | Cycle detection through ResourceManager, reject/cancel config, disabled no-ops |
+| **Integration: Adaptive Demands** | 8 | Adaptive/hybrid/static modes, probabilistic safety, backward compatibility |
+| **Integration: Progress Monitor** | 6 | Stall detection, auto-release, monitor events, multi-agent stall states |
 
 ```bash
 cd build && ctest --output-on-failure
-# 109/109 tests pass in ~0.5 seconds
+# 189/189 tests pass in ~2.7 seconds
 ```
 
 ### Deadlock prevention proof tests
@@ -676,14 +845,17 @@ agentguard/
 |   |-- agentguard.hpp                  # Umbrella header (includes everything)
 |   |-- types.hpp                       # AgentId, ResourceTypeId, enums, structs
 |   |-- exceptions.hpp                  # Exception hierarchy
-|   |-- config.hpp                      # Config struct
+|   |-- config.hpp                      # Config struct (+ ProgressConfig, DelegationConfig, AdaptiveConfig)
 |   |-- resource.hpp                    # Resource class
 |   |-- agent.hpp                       # Agent class
-|   |-- safety_checker.hpp              # Core Banker's Algorithm
+|   |-- safety_checker.hpp              # Core Banker's Algorithm + probabilistic extensions
 |   |-- request_queue.hpp               # Priority queue for pending requests
 |   |-- resource_manager.hpp            # Central coordinator
 |   |-- monitor.hpp                     # Monitor interface + ConsoleMonitor + MetricsMonitor
 |   |-- policy.hpp                      # Scheduling policies
+|   |-- progress_tracker.hpp            # Stuck agent detection via progress invariants
+|   |-- delegation_tracker.hpp          # Authority deadlock cycle detection
+|   |-- demand_estimator.hpp            # Statistical max-need estimation
 |   |-- ai/
 |       |-- token_budget.hpp            # LLM token pool resource
 |       |-- rate_limiter.hpp            # API rate limit resource
@@ -693,18 +865,20 @@ agentguard/
 |   |-- CMakeLists.txt                  # Library target
 |   |-- resource.cpp, agent.cpp, safety_checker.cpp, resource_manager.cpp,
 |   |-- request_queue.cpp, monitor.cpp, policy.cpp, config.cpp
+|   |-- progress_tracker.cpp, delegation_tracker.cpp, demand_estimator.cpp
 |   |-- ai/
 |       |-- token_budget.cpp, rate_limiter.cpp, tool_slot.cpp, memory_pool.cpp
 |-- tests/
 |   |-- CMakeLists.txt                  # GoogleTest via FetchContent
-|   |-- unit/                           # Per-class unit tests (6 files)
-|   |-- integration/                    # Concurrent and deadlock prevention tests (2 files)
+|   |-- unit/                           # Per-class unit tests (10 files)
+|   |-- integration/                    # Concurrent, deadlock, and feature integration tests (5 files)
 |-- examples/
     |-- CMakeLists.txt
     |-- 01_basic_usage.cpp              # Minimal example
     |-- 02_llm_api_rate_limits.cpp      # Multi-threaded API rate sharing
     |-- 03_tool_sharing.cpp             # Deadlock-free tool sharing
     |-- 04_priority_agents.cpp          # Priority scheduling with metrics
+    |-- 05_adaptive_agents.cpp          # All three novel features in action
 ```
 
 ## Requirements

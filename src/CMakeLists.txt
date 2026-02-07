@@ -11,6 +11,9 @@ add_library(agentguard
     ai/rate_limiter.cpp
     ai/tool_slot.cpp
     ai/memory_pool.cpp
+    progress_tracker.cpp
+    delegation_tracker.cpp
+    demand_estimator.cpp
 )
 
 add_library(AgentGuard::agentguard ALIAS agentguard)

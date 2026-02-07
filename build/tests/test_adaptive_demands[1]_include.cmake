@@ -1,0 +1,5 @@
+if(EXISTS "/Users/saurabhkumar/Downloads/c++/build/tests/test_adaptive_demands[1]_tests.cmake")
+  include("/Users/saurabhkumar/Downloads/c++/build/tests/test_adaptive_demands[1]_tests.cmake")
+else()
+  add_test(test_adaptive_demands_NOT_BUILT test_adaptive_demands_NOT_BUILT)
+endif()
