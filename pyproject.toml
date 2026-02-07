@@ -3,13 +3,44 @@ requires = ["scikit-build-core>=0.8", "pybind11>=2.12"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "agentguard"
+name = "agentguard-ai"
 version = "1.0.0"
-description = "Deadlock prevention for multi-AI-agent systems"
+description = "Deadlock prevention for multi-AI-agent systems using the Banker's Algorithm. C++ core, Python bindings, LangGraph integration."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.9"
 dependencies = []
+authors = [
+    {name = "Saurabh Kumar"},
+]
+keywords = [
+    "deadlock", "deadlock-prevention", "bankers-algorithm",
+    "multi-agent", "ai-agents", "langgraph", "langchain",
+    "resource-management", "concurrency", "rate-limiting",
+    "llm", "agent-framework", "tool-calling",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: C++",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Distributed Computing",
+]
+
+[project.urls]
+Homepage = "https://github.com/100rabhkr/AgentGuard"
+Repository = "https://github.com/100rabhkr/AgentGuard"
+"Bug Tracker" = "https://github.com/100rabhkr/AgentGuard/issues"
 
 [project.optional-dependencies]
 langgraph = ["langgraph>=0.2", "langchain-core>=0.2"]

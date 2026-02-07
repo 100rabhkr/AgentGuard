@@ -1,8 +1,11 @@
 # AgentGuard
 
+[![PyPI](https://img.shields.io/pypi/v/agentguard-ai)](https://pypi.org/project/agentguard-ai/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Deadlock prevention for multi-AI-agent systems -- beyond the textbook.**
 
-AgentGuard is a C++17 library with first-class Python bindings that started as a clean implementation of the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) (Dijkstra, 1965) for preventing deadlocks when multiple AI agents compete for shared resources. Use it from C++ or `pip install` it into your Python project -- with native LangGraph integration. But classical Banker's has real gaps when applied to AI agents. We identified three, and built solutions for each:
+AgentGuard is a C++17 library with first-class Python bindings that started as a clean implementation of the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) (Dijkstra, 1965) for preventing deadlocks when multiple AI agents compete for shared resources. Use it from C++ or `pip install agentguard-ai` into your Python project -- with native LangGraph integration. But classical Banker's has real gaps when applied to AI agents. We identified three, and built solutions for each:
 
 1. **Agents get stuck with no one noticing.** The #1 complaint across LangGraph, CrewAI, and AutoGen is infinite loops. Current solutions are dumb counters (kill after N steps). AgentGuard's **Progress Monitor** detects stuck agents using progress invariants and auto-releases their resources.
 
@@ -101,7 +104,7 @@ We started with a textbook Banker's Algorithm. It worked, but it wasn't enough. 
 
 All three features are opt-in (disabled by default), backward-compatible, and independently toggleable. The original 109 tests pass unchanged.
 
-**V3: Python bindings + LangGraph integration.** A C++ library nobody in the Python AI ecosystem will link. We added pybind11 bindings exposing the full API to Python (`pip install .`) and a high-level LangGraph integration layer with context managers, a `@guarded_tool` decorator, and drop-in `GuardedToolNode`/`AgentGuardCallbackHandler` for LangGraph and LangChain.
+**V3: Python bindings + LangGraph integration.** A C++ library nobody in the Python AI ecosystem will link. We added pybind11 bindings exposing the full API to Python (`pip install agentguard-ai`) and a high-level LangGraph integration layer with context managers, a `@guarded_tool` decorator, and drop-in `GuardedToolNode`/`AgentGuardCallbackHandler` for LangGraph and LangChain.
 
 | Version | What | Tests |
 |---------|------|-------|
@@ -112,8 +115,8 @@ All three features are opt-in (disabled by default), backward-compatible, and in
 ## Quick Start (Python)
 
 ```bash
-pip install .                          # builds C++ extension automatically
-pip install ".[langgraph]"             # also installs langgraph + langchain-core
+pip install agentguard-ai              # from PyPI
+pip install "agentguard-ai[langgraph]" # + LangGraph/LangChain integration
 ```
 
 ```python
@@ -240,6 +243,13 @@ int main() {
 ## Installation & Building
 
 ### Python (recommended)
+
+```bash
+pip install agentguard-ai              # from PyPI (prebuilt)
+pip install "agentguard-ai[langgraph]" # + LangGraph/LangChain integration
+```
+
+Or from source:
 
 ```bash
 pip install .                          # core library
@@ -426,7 +436,7 @@ node = GuardedToolNode(
 # graph.add_node("tools", node)
 ```
 
-Requires `pip install "agentguard[langgraph]"`. Falls back to a placeholder that raises `ImportError` if langgraph is not installed.
+Requires `pip install "agentguard-ai[langgraph]"`. Falls back to a placeholder that raises `ImportError` if langgraph is not installed.
 
 ### AgentGuardCallbackHandler (LangChain)
 
@@ -455,7 +465,7 @@ handler = AgentGuardCallbackHandler(
 - `on_tool_end()` releases resources and reports progress
 - `on_tool_error()` releases resources (cleanup on failure)
 
-Requires `pip install "agentguard[langgraph]"`.
+Requires `pip install "agentguard-ai[langgraph]"`.
 
 ### Low-Level Bindings
 
@@ -1226,7 +1236,7 @@ agentguard/
 
 ### Python
 - **Python**: 3.9+
-- **Build**: pybind11 2.12+, scikit-build-core 0.8+, CMake 3.16+ (all auto-installed by `pip install`)
+- **Build**: pybind11 2.12+, scikit-build-core 0.8+, CMake 3.16+ (all auto-installed by `pip install agentguard-ai`)
 - **Optional**: langgraph 0.2+, langchain-core 0.2+ (for LangGraph integration)
 - **Dev**: pytest, pytest-timeout
 
@@ -1246,8 +1256,8 @@ agentguard/
 ### Python (pip)
 
 ```bash
-pip install .                          # from source
-pip install ".[langgraph]"             # with LangGraph support
+pip install agentguard-ai              # from PyPI
+pip install "agentguard-ai[langgraph]" # with LangGraph support
 ```
 
 ```python
