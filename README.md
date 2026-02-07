@@ -2,7 +2,7 @@
 
 **Deadlock prevention for multi-AI-agent systems -- beyond the textbook.**
 
-AgentGuard is a C++17 library that started as a clean implementation of the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) (Dijkstra, 1965) for preventing deadlocks when multiple AI agents compete for shared resources. But classical Banker's has real gaps when applied to AI agents. We identified three, and built solutions for each:
+AgentGuard is a C++17 library with first-class Python bindings that started as a clean implementation of the [Banker's Algorithm](https://en.wikipedia.org/wiki/Banker%27s_algorithm) (Dijkstra, 1965) for preventing deadlocks when multiple AI agents compete for shared resources. Use it from C++ or `pip install` it into your Python project -- with native LangGraph integration. But classical Banker's has real gaps when applied to AI agents. We identified three, and built solutions for each:
 
 1. **Agents get stuck with no one noticing.** The #1 complaint across LangGraph, CrewAI, and AutoGen is infinite loops. Current solutions are dumb counters (kill after N steps). AgentGuard's **Progress Monitor** detects stuck agents using progress invariants and auto-releases their resources.
 
@@ -17,9 +17,16 @@ The core guarantee still holds: before granting any resource request, AgentGuard
 - [The Problem](#the-problem)
 - [How It Works](#how-it-works)
 - [What Makes AgentGuard Different](#what-makes-agentguard-different)
-- [Quick Start](#quick-start)
-- [Building](#building)
-- [API Reference](#api-reference)
+- [Quick Start (Python)](#quick-start-python)
+- [Quick Start (C++)](#quick-start-c)
+- [Installation & Building](#installation--building)
+- [Python API](#python-api)
+  - [AgentGuard Wrapper](#agentguard-wrapper)
+  - [@guarded_tool Decorator](#guarded_tool-decorator)
+  - [GuardedToolNode (LangGraph)](#guardedtoolnode-langgraph)
+  - [AgentGuardCallbackHandler (LangChain)](#agentguardcallbackhandler-langchain)
+  - [Low-Level Bindings](#low-level-bindings)
+- [C++ API Reference](#c-api-reference)
   - [ResourceManager](#resourcemanager)
   - [Agent](#agent)
   - [Resource](#resource)
@@ -94,7 +101,90 @@ We started with a textbook Banker's Algorithm. It worked, but it wasn't enough. 
 
 All three features are opt-in (disabled by default), backward-compatible, and independently toggleable. The original 109 tests pass unchanged.
 
-## Quick Start
+**V3: Python bindings + LangGraph integration.** A C++ library nobody in the Python AI ecosystem will link. We added pybind11 bindings exposing the full API to Python (`pip install .`) and a high-level LangGraph integration layer with context managers, a `@guarded_tool` decorator, and drop-in `GuardedToolNode`/`AgentGuardCallbackHandler` for LangGraph and LangChain.
+
+| Version | What | Tests |
+|---------|------|-------|
+| V1 | Classical Banker's Algorithm | 109 C++ |
+| V2 | + Progress Monitor, Delegation Tracker, Adaptive Demands | 189 C++ |
+| V3 | + Python bindings, LangGraph integration | 189 C++ + 96 Python |
+
+## Quick Start (Python)
+
+```bash
+pip install .                          # builds C++ extension automatically
+pip install ".[langgraph]"             # also installs langgraph + langchain-core
+```
+
+```python
+from agentguard.langgraph import AgentGuard, guarded_tool
+
+# 1. Create a guard and register shared resources
+guard = AgentGuard()
+guard.add_resource("openai_api", capacity=60, category="api_rate_limit")
+guard.add_resource("browser", capacity=2, category="tool_slot")
+
+# 2. Register agents with their maximum resource needs
+researcher = guard.register_agent("researcher", max_needs={"openai_api": 10, "browser": 1})
+summarizer = guard.register_agent("summarizer", max_needs={"openai_api": 5})
+
+# 3. Use context managers for automatic acquire/release
+with guard.acquire(researcher, "openai_api", 3, timeout=5.0):
+    # ... use 3 API slots, auto-released on exit ...
+    pass
+
+# 4. Or use the decorator for zero-boilerplate tool wrapping
+@guarded_tool(guard, researcher, {"openai_api": 2, "browser": 1}, timeout=10.0)
+def research(query: str) -> str:
+    return call_openai(query)  # resources auto-acquired and released
+
+result = research("latest AI papers")
+
+# 5. Atomic multi-resource acquisition
+with guard.acquire_batch(researcher, {"openai_api": 5, "browser": 1}):
+    # ... all-or-nothing, auto-released ...
+    pass
+
+guard.stop()
+```
+
+### LangGraph integration
+
+```python
+from agentguard.langgraph import AgentGuard, GuardedToolNode
+
+guard = AgentGuard()
+guard.add_resource("api", 60)
+agent_id = guard.register_agent("agent", max_needs={"api": 10})
+
+# Drop-in replacement for LangGraph's ToolNode
+node = GuardedToolNode(
+    tools=[search_tool, calculator_tool],
+    guard=guard,
+    agent_id=agent_id,
+    tool_resources={"search_tool": {"api": 2}, "calculator_tool": {}},
+)
+# graph.add_node("tools", node)
+```
+
+### LangChain callback handler
+
+```python
+from agentguard.langgraph import AgentGuard, AgentGuardCallbackHandler
+
+guard = AgentGuard()
+guard.add_resource("api", 60)
+agent_id = guard.register_agent("agent", max_needs={"api": 10})
+
+handler = AgentGuardCallbackHandler(
+    guard=guard,
+    agent_id=agent_id,
+    tool_resources={"search": {"api": 1}},
+)
+# Pass handler to any LangChain agent/chain
+```
+
+## Quick Start (C++)
 
 ```cpp
 #include <agentguard/agentguard.hpp>
@@ -147,15 +237,25 @@ int main() {
 }
 ```
 
-## Building
+## Installation & Building
 
-### Prerequisites
+### Python (recommended)
+
+```bash
+pip install .                          # core library
+pip install ".[langgraph]"             # + LangGraph/LangChain integration
+pip install ".[dev]"                   # + pytest for development
+```
+
+Requires Python 3.9+, a C++17 compiler, and CMake 3.16+. The build happens automatically via scikit-build-core and pybind11.
+
+### C++ Prerequisites
 
 - C++17 compiler (GCC 7+, Clang 5+, AppleClang 10+, MSVC 19.14+)
 - CMake 3.16+
 - (Tests only) Internet connection for GoogleTest download via FetchContent
 
-### Build
+### C++ Build
 
 ```bash
 mkdir build && cd build
@@ -169,6 +269,7 @@ cmake --build . --parallel
 |---|---|---|
 | `AGENTGUARD_BUILD_TESTS` | `ON` | Build unit and integration tests |
 | `AGENTGUARD_BUILD_EXAMPLES` | `ON` | Build example programs |
+| `AGENTGUARD_BUILD_PYTHON` | `OFF` | Build Python bindings (auto-enabled by `pip install`) |
 | `AGENTGUARD_BUILD_BENCHMARKS` | `OFF` | Build benchmark programs |
 | `AGENTGUARD_ENABLE_ASAN` | `OFF` | Enable AddressSanitizer |
 | `AGENTGUARD_ENABLE_TSAN` | `OFF` | Enable ThreadSanitizer |
@@ -209,7 +310,195 @@ cd build
 cmake --install . --prefix /usr/local
 ```
 
-## API Reference
+## Python API
+
+### AgentGuard Wrapper
+
+The `AgentGuard` class provides a Pythonic interface with string-based resource names, context managers, and automatic lifecycle management.
+
+```python
+from agentguard.langgraph import AgentGuard
+import agentguard as ag
+
+# Create with auto-start (background processor starts immediately)
+guard = AgentGuard()
+
+# Or with custom config
+config = ag.Config()
+config.progress.enabled = True
+config.delegation.enabled = True
+config.adaptive.enabled = True
+guard = AgentGuard(config=config)
+
+# Register resources by name
+guard.add_resource("openai_api", capacity=60, category="api_rate_limit")
+guard.add_resource("browser", capacity=2, category="tool_slot")
+
+# Register agents with string-based max needs
+aid = guard.register_agent("researcher",
+    priority=ag.PRIORITY_HIGH,
+    max_needs={"openai_api": 10, "browser": 1},
+    demand_mode=ag.DemandMode.Adaptive,  # optional
+)
+
+# Context manager: auto-acquire and release
+with guard.acquire(aid, "openai_api", 3, timeout=5.0) as status:
+    assert status == ag.RequestStatus.Granted
+    # resources released on exit, even on exception
+
+# Batch acquire: all-or-nothing
+with guard.acquire_batch(aid, {"openai_api": 5, "browser": 1}, timeout=10.0):
+    pass  # all released on exit
+
+# Delegation tracking
+guard.delegate(from_agent=aid1, to_agent=aid2, task="summarize")
+guard.complete_delegation(aid1, aid2)
+
+# Progress reporting
+guard.report_progress(aid, "steps", 42)
+
+# Queries
+guard.is_safe()           # bool
+guard.snapshot()          # ag.SystemSnapshot
+guard.is_stalled(aid)     # bool
+guard.manager             # access underlying ag.ResourceManager
+
+# Use as context manager for automatic cleanup
+with AgentGuard() as g:
+    # ... use g ...
+    pass  # g.stop() called automatically
+```
+
+**Category strings**: `"api_rate_limit"`, `"token_budget"`, `"tool_slot"`, `"memory_pool"`, `"database_conn"`, `"gpu_compute"`, `"file_handle"`, `"network_socket"`, `"custom"`
+
+### @guarded_tool Decorator
+
+Wrap any function with automatic resource acquire/release.
+
+```python
+from agentguard.langgraph import AgentGuard, guarded_tool
+
+guard = AgentGuard()
+guard.add_resource("api", 60)
+aid = guard.register_agent("worker", max_needs={"api": 10})
+
+# Single resource
+@guarded_tool(guard, aid, "api")
+def call_api(prompt: str) -> str:
+    return openai.chat(prompt)
+
+# Multiple resources (uses acquire_batch)
+@guarded_tool(guard, aid, {"api": 2, "browser": 1}, timeout=10.0)
+def research(query: str) -> str:
+    return search_and_summarize(query)
+
+# Adaptive mode
+@guarded_tool(guard, aid, "api", adaptive=True)
+def flexible_call(prompt: str) -> str:
+    return openai.chat(prompt)
+
+result = call_api("hello")  # resources acquired/released automatically
+```
+
+### GuardedToolNode (LangGraph)
+
+Drop-in replacement for LangGraph's `ToolNode` that wraps each tool invocation with resource guards.
+
+```python
+from agentguard.langgraph import AgentGuard, GuardedToolNode
+
+guard = AgentGuard()
+guard.add_resource("api", 60)
+aid = guard.register_agent("agent", max_needs={"api": 10})
+
+node = GuardedToolNode(
+    tools=[search_tool, calculator_tool],
+    guard=guard,
+    agent_id=aid,
+    tool_resources={
+        "search_tool": {"api": 2},
+        "calculator_tool": {},      # no resources needed
+    },
+    timeout=10.0,
+)
+
+# Use in a LangGraph StateGraph:
+# graph.add_node("tools", node)
+```
+
+Requires `pip install "agentguard[langgraph]"`. Falls back to a placeholder that raises `ImportError` if langgraph is not installed.
+
+### AgentGuardCallbackHandler (LangChain)
+
+LangChain callback handler that auto-instruments tool calls with resource acquisition/release.
+
+```python
+from agentguard.langgraph import AgentGuard, AgentGuardCallbackHandler
+
+guard = AgentGuard()
+guard.add_resource("api", 60)
+aid = guard.register_agent("agent", max_needs={"api": 10})
+
+handler = AgentGuardCallbackHandler(
+    guard=guard,
+    agent_id=aid,
+    tool_resources={"search": {"api": 1}, "calculator": {"api": 1}},
+    timeout=5.0,
+    report_progress=True,  # auto-reports tool_calls metric
+)
+
+# Pass to any LangChain agent or chain:
+# agent.invoke(input, config={"callbacks": [handler]})
+```
+
+- `on_tool_start()` acquires resources for the tool
+- `on_tool_end()` releases resources and reports progress
+- `on_tool_error()` releases resources (cleanup on failure)
+
+Requires `pip install "agentguard[langgraph]"`.
+
+### Low-Level Bindings
+
+The full C++ API is available directly via `import agentguard`:
+
+```python
+import agentguard as ag
+import datetime
+
+# All C++ types are available
+config = ag.Config()
+manager = ag.ResourceManager(config)
+manager.register_resource(ag.Resource(1, "API", ag.ResourceCategory.ApiRateLimit, 10))
+
+agent = ag.Agent(0, "test", ag.PRIORITY_HIGH)
+agent.declare_max_need(1, 5)
+aid = manager.register_agent(agent)
+
+manager.start()
+status = manager.request_resources(aid, 1, 3, datetime.timedelta(seconds=5))
+assert status == ag.RequestStatus.Granted
+manager.release_resources(aid, 1, 3)
+manager.stop()
+
+# Enums, structs, exceptions, monitors, policies, AI types all available
+# ag.RequestStatus, ag.AgentState, ag.ResourceCategory, ag.DemandMode, ...
+# ag.SafetyChecker, ag.DemandEstimator, ag.MetricsMonitor, ...
+# ag.FifoPolicy, ag.PriorityPolicy, ag.FairnessPolicy, ...
+# ag.ai.TokenBudget, ag.ai.RateLimiter, ag.ai.ToolSlot, ag.ai.MemoryPool
+
+# Python subclassing of Monitor and SchedulingPolicy is supported
+class MyMonitor(ag.Monitor):
+    def on_event(self, event):
+        print(f"Event: {event.type}")
+    def on_snapshot(self, snapshot):
+        pass
+
+manager.set_monitor(MyMonitor())
+```
+
+GIL safety: blocking C++ calls (e.g., `request_resources`) release the GIL so other Python threads can run. Callbacks from C++ background threads properly acquire the GIL before invoking Python code.
+
+## C++ API Reference
 
 ### ResourceManager
 
@@ -800,7 +1089,9 @@ Agent Thread                 ResourceManager                SafetyChecker
 
 ## Testing
 
-189 tests across unit, integration, and concurrent categories:
+**285 total tests** (189 C++ + 96 Python) across unit, integration, and concurrent categories.
+
+### C++ tests (189)
 
 | Category | Tests | Coverage |
 |---|---|---|
@@ -825,6 +1116,26 @@ cd build && ctest --output-on-failure
 # 189/189 tests pass in ~2.7 seconds
 ```
 
+### Python tests (96)
+
+| Category | Tests | Coverage |
+|---|---|---|
+| **Bindings: Basic** | 31 | Enums, structs, config defaults, priority constants, exception hierarchy, UsageStats |
+| **Bindings: Manager** | 17 | Full lifecycle: register, request, release, batch, overloads, snapshots |
+| **Bindings: Threading** | 7 | GIL release on blocking calls, concurrent agents, FutureRequestStatus, callbacks |
+| **Bindings: Monitors** | 8 | Python Monitor subclass, ConsoleMonitor, MetricsMonitor alerts, CompositeMonitor |
+| **Bindings: Subsystems** | 13 | SafetyChecker, DemandEstimator, progress, delegation, adaptive through bindings |
+| **LangGraph: Guard** | 14 | AgentGuard wrapper: add_resource, register_agent, acquire, batch, delegation |
+| **LangGraph: Decorator** | 6 | @guarded_tool single/multi resource, exception cleanup, functools.wraps |
+| **LangGraph: Node** | 5* | GuardedToolNode construction (skipped if langgraph not installed) |
+
+\* 5 tests skipped when langgraph/langchain-core are not installed.
+
+```bash
+pip install ".[dev]" && pytest python/tests/ -v
+# 96 passed, 5 skipped in ~1.7 seconds
+```
+
 ### Deadlock prevention proof tests
 
 The integration tests construct scenarios that **would** deadlock without the Banker's Algorithm and verify that AgentGuard prevents them:
@@ -838,6 +1149,7 @@ The integration tests construct scenarios that **would** deadlock without the Ba
 ```
 agentguard/
 |-- CMakeLists.txt                      # Root build configuration
+|-- pyproject.toml                      # Python packaging (scikit-build-core + pybind11)
 |-- cmake/
 |   |-- CompilerWarnings.cmake          # -Wall -Wextra -Wpedantic etc.
 |   |-- Sanitizers.cmake                # ASan / TSan / UBSan support
@@ -868,6 +1180,35 @@ agentguard/
 |   |-- progress_tracker.cpp, delegation_tracker.cpp, demand_estimator.cpp
 |   |-- ai/
 |       |-- token_budget.cpp, rate_limiter.cpp, tool_slot.cpp, memory_pool.cpp
+|-- python/
+|   |-- CMakeLists.txt                  # pybind11 module build
+|   |-- src/
+|   |   |-- bind_forward.hpp            # Forward declarations for binding functions
+|   |   |-- bindings.cpp                # Module entry + enums + structs + exceptions
+|   |   |-- bind_core.cpp              # Resource, Agent, FutureRequestStatus, ResourceManager
+|   |   |-- bind_monitors.cpp          # Monitor trampoline, ConsoleMonitor, MetricsMonitor
+|   |   |-- bind_policies.cpp          # SchedulingPolicy trampoline, 5 concrete policies
+|   |   |-- bind_subsystems.cpp        # SafetyChecker, DemandEstimator
+|   |   |-- bind_ai.cpp               # ai submodule: TokenBudget, RateLimiter, ToolSlot, MemoryPool
+|   |-- agentguard/
+|   |   |-- __init__.py                # Re-exports from C extension
+|   |   |-- _version.py               # __version__ = "1.0.0"
+|   |   |-- langgraph/
+|   |       |-- __init__.py            # Public API: AgentGuard, guarded_tool, GuardedToolNode
+|   |       |-- guard.py              # High-level Pythonic wrapper (string names, context managers)
+|   |       |-- decorator.py          # @guarded_tool decorator
+|   |       |-- node.py              # GuardedToolNode (wraps LangGraph ToolNode)
+|   |       |-- callback.py          # AgentGuardCallbackHandler (LangChain callbacks)
+|   |-- tests/
+|       |-- conftest.py               # Shared fixtures
+|       |-- test_bindings_basic.py    # Enums, structs, constants, exceptions
+|       |-- test_bindings_manager.py  # Full ResourceManager lifecycle
+|       |-- test_bindings_threading.py # GIL release, concurrent agents
+|       |-- test_bindings_monitors.py # Python Monitor subclass, callbacks
+|       |-- test_bindings_subsystems.py # Progress, delegation, adaptive
+|       |-- test_langgraph_guard.py   # AgentGuard wrapper
+|       |-- test_langgraph_decorator.py # @guarded_tool
+|       |-- test_langgraph_node.py    # GuardedToolNode
 |-- tests/
 |   |-- CMakeLists.txt                  # GoogleTest via FetchContent
 |   |-- unit/                           # Per-class unit tests (10 files)
@@ -883,6 +1224,13 @@ agentguard/
 
 ## Requirements
 
+### Python
+- **Python**: 3.9+
+- **Build**: pybind11 2.12+, scikit-build-core 0.8+, CMake 3.16+ (all auto-installed by `pip install`)
+- **Optional**: langgraph 0.2+, langchain-core 0.2+ (for LangGraph integration)
+- **Dev**: pytest, pytest-timeout
+
+### C++
 - **C++ Standard**: C++17
 - **Build System**: CMake 3.16+
 - **Compiler**: Any C++17-capable compiler
@@ -894,6 +1242,19 @@ agentguard/
 - **Threading**: POSIX threads (pthreads) or Windows threads
 
 ## Integration
+
+### Python (pip)
+
+```bash
+pip install .                          # from source
+pip install ".[langgraph]"             # with LangGraph support
+```
+
+```python
+import agentguard as ag                       # low-level C++ bindings
+from agentguard.langgraph import AgentGuard   # high-level wrapper
+from agentguard.langgraph import guarded_tool # decorator
+```
 
 ### CMake (after install)
 

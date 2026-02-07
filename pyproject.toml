@@ -1,0 +1,24 @@
+[build-system]
+requires = ["scikit-build-core>=0.8", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "agentguard"
+version = "1.0.0"
+description = "Deadlock prevention for multi-AI-agent systems"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+langgraph = ["langgraph>=0.2", "langchain-core>=0.2"]
+dev = ["pytest", "pytest-timeout"]
+all = ["langgraph>=0.2", "langchain-core>=0.2", "pytest", "pytest-timeout"]
+
+[tool.scikit-build]
+cmake.args = ["-DAGENTGUARD_BUILD_PYTHON=ON", "-DAGENTGUARD_BUILD_TESTS=OFF", "-DAGENTGUARD_BUILD_EXAMPLES=OFF"]
+wheel.packages = ["python/agentguard"]
+
+[tool.pytest.ini_options]
+testpaths = ["python/tests"]

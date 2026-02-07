@@ -18,6 +18,7 @@ option(AGENTGUARD_ENABLE_ASAN "Enable AddressSanitizer" OFF)
 option(AGENTGUARD_ENABLE_TSAN "Enable ThreadSanitizer" OFF)
 option(AGENTGUARD_ENABLE_UBSAN "Enable UndefinedBehaviorSanitizer" OFF)
 option(AGENTGUARD_INSTALL "Generate install targets" ON)
+option(AGENTGUARD_BUILD_PYTHON "Build Python bindings" OFF)
 
 # Custom CMake modules
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -36,6 +37,11 @@ endif()
 # Examples
 if(AGENTGUARD_BUILD_EXAMPLES)
     add_subdirectory(examples)
+endif()
+
+# Python bindings
+if(AGENTGUARD_BUILD_PYTHON)
+    add_subdirectory(python)
 endif()
 
 # Install
