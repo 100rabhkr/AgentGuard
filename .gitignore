@@ -1,0 +1,10 @@
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.so
+*.dylib
+.DS_Store
+*.pdf

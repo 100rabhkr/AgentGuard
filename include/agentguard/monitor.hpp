@@ -7,6 +7,7 @@
 #include <mutex>
 #include <optional>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 namespace agentguard {
@@ -56,6 +57,9 @@ struct MonitorEvent {
     std::optional<AgentId> target_agent_id;
     // Delegation cycle detection: the cycle path
     std::optional<std::vector<AgentId>> cycle_path;
+
+    // Operation duration in microseconds (e.g., safety check duration)
+    std::optional<double> duration_us;
 };
 
 // Abstract monitor interface
@@ -115,6 +119,15 @@ private:
     AlertCallback utilization_cb_;
     std::size_t queue_size_threshold_{0};
     AlertCallback queue_size_cb_;
+
+    // Timing tracking for wait time calculation
+    std::unordered_map<RequestId, Timestamp> pending_submit_times_;
+    std::uint64_t wait_time_sample_count_{0};
+    double wait_time_sum_ms_{0.0};
+
+    // Safety check duration tracking
+    std::uint64_t safety_check_count_{0};
+    double safety_check_duration_sum_us_{0.0};
 };
 
 // Fan-out to multiple monitors

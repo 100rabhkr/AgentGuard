@@ -166,7 +166,8 @@ private:
                     std::optional<ResourceTypeId> resource_type = std::nullopt,
                     std::optional<RequestId> request_id = std::nullopt,
                     std::optional<ResourceQuantity> quantity = std::nullopt,
-                    std::optional<bool> safety_result = std::nullopt);
+                    std::optional<bool> safety_result = std::nullopt,
+                    std::optional<double> duration_us = std::nullopt);
 };
 
 } // namespace agentguard

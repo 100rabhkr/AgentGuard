@@ -129,15 +129,47 @@ void MetricsMonitor::on_event(const MonitorEvent& event) {
     switch (event.type) {
         case EventType::RequestSubmitted:
             metrics_.total_requests++;
+            // Track submit time for wait time calculation
+            if (event.request_id.has_value()) {
+                pending_submit_times_[*event.request_id] = event.timestamp;
+            }
             break;
         case EventType::RequestGranted:
             metrics_.granted_requests++;
+            // Calculate wait time from submit to grant
+            if (event.request_id.has_value()) {
+                auto it = pending_submit_times_.find(*event.request_id);
+                if (it != pending_submit_times_.end()) {
+                    double ms = std::chrono::duration<double, std::milli>(
+                        event.timestamp - it->second).count();
+                    wait_time_sum_ms_ += ms;
+                    wait_time_sample_count_++;
+                    metrics_.average_wait_time_ms =
+                        wait_time_sum_ms_ / wait_time_sample_count_;
+                    pending_submit_times_.erase(it);
+                }
+            }
             break;
         case EventType::RequestDenied:
             metrics_.denied_requests++;
+            if (event.request_id.has_value()) {
+                pending_submit_times_.erase(*event.request_id);
+            }
             break;
         case EventType::RequestTimedOut:
             metrics_.timed_out_requests++;
+            if (event.request_id.has_value()) {
+                pending_submit_times_.erase(*event.request_id);
+            }
+            break;
+        case EventType::SafetyCheckPerformed:
+        case EventType::ProbabilisticSafetyCheck:
+            if (event.duration_us.has_value()) {
+                safety_check_count_++;
+                safety_check_duration_sum_us_ += *event.duration_us;
+                metrics_.safety_check_avg_duration_us =
+                    safety_check_duration_sum_us_ / safety_check_count_;
+            }
             break;
         case EventType::UnsafeStateDetected:
             metrics_.unsafe_state_detections++;
@@ -185,6 +217,11 @@ MetricsMonitor::Metrics MetricsMonitor::get_metrics() const {
 void MetricsMonitor::reset_metrics() {
     std::lock_guard<std::mutex> lock(metrics_mutex_);
     metrics_ = Metrics{};
+    pending_submit_times_.clear();
+    wait_time_sample_count_ = 0;
+    wait_time_sum_ms_ = 0.0;
+    safety_check_count_ = 0;
+    safety_check_duration_sum_us_ = 0.0;
 }
 
 void MetricsMonitor::set_utilization_alert_threshold(double threshold, AlertCallback cb) {

@@ -44,6 +44,11 @@ if(AGENTGUARD_BUILD_PYTHON)
     add_subdirectory(python)
 endif()
 
+# Benchmarks
+if(AGENTGUARD_BUILD_BENCHMARKS)
+    add_subdirectory(benchmarks)
+endif()
+
 # Install
 if(AGENTGUARD_INSTALL)
     include(GNUInstallDirs)

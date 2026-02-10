@@ -221,12 +221,15 @@ RequestStatus ResourceManager::request_resources(
         if (res.available() >= quantity) {
             // Check if granting would keep us in a safe state
             auto input = build_safety_input();
+            auto t0 = std::chrono::steady_clock::now();
             auto result = safety_checker_.check_hypothetical(
                 input, agent_id, resource_type, quantity);
+            auto t1 = std::chrono::steady_clock::now();
+            double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
 
             emit_event(EventType::SafetyCheckPerformed, result.reason,
                        agent_id, resource_type, std::nullopt, quantity,
-                       result.is_safe);
+                       result.is_safe, dur_us);
 
             if (result.is_safe) {
                 // Grant!
@@ -262,8 +265,15 @@ RequestStatus ResourceManager::request_resources(
 
             if (res_it->second.available() >= quantity) {
                 auto input = build_safety_input();
+                auto t0 = std::chrono::steady_clock::now();
                 auto result = safety_checker_.check_hypothetical(
                     input, agent_id, resource_type, quantity);
+                auto t1 = std::chrono::steady_clock::now();
+                double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+                emit_event(EventType::SafetyCheckPerformed, result.reason,
+                           agent_id, resource_type, std::nullopt, quantity,
+                           result.is_safe, dur_us);
 
                 if (result.is_safe) {
                     res_it->second.allocate(quantity);
@@ -349,7 +359,14 @@ RequestStatus ResourceManager::request_resources_batch(
                 batch.push_back(req);
             }
 
+            auto t0 = std::chrono::steady_clock::now();
             auto result = safety_checker_.check_hypothetical_batch(input, batch);
+            auto t1 = std::chrono::steady_clock::now();
+            double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+            emit_event(EventType::SafetyCheckPerformed, result.reason,
+                       agent_id, std::nullopt, std::nullopt, std::nullopt,
+                       result.is_safe, dur_us);
 
             if (result.is_safe) {
                 // Grant all atomically
@@ -644,8 +661,15 @@ void ResourceManager::try_grant_pending_requests() {
 
         if (res_it->second.available() >= req.quantity) {
             auto input = build_safety_input();
+            auto t0 = std::chrono::steady_clock::now();
             auto result = safety_checker_.check_hypothetical(
                 input, req.agent_id, req.resource_type, req.quantity);
+            auto t1 = std::chrono::steady_clock::now();
+            double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+            emit_event(EventType::SafetyCheckPerformed, result.reason,
+                       req.agent_id, req.resource_type, req.id, req.quantity,
+                       result.is_safe, dur_us);
 
             if (result.is_safe) {
                 res_it->second.allocate(req.quantity);
@@ -674,7 +698,14 @@ bool ResourceManager::try_grant_single(AgentId agent_id, ResourceTypeId resource
     if (res_it->second.available() < quantity) return false;
 
     auto input = build_safety_input();
+    auto t0 = std::chrono::steady_clock::now();
     auto result = safety_checker_.check_hypothetical(input, agent_id, resource_type, quantity);
+    auto t1 = std::chrono::steady_clock::now();
+    double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+    emit_event(EventType::SafetyCheckPerformed, result.reason,
+               agent_id, resource_type, std::nullopt, quantity,
+               result.is_safe, dur_us);
 
     if (result.is_safe) {
         res_it->second.allocate(quantity);
@@ -799,13 +830,16 @@ RequestStatus ResourceManager::request_resources_adaptive(
 
         if (res.available() >= quantity) {
             auto input = build_adaptive_safety_input(config_.adaptive.default_confidence_level);
+            auto t0 = std::chrono::steady_clock::now();
             auto result = safety_checker_.check_hypothetical_probabilistic(
                 input, agent_id, resource_type, quantity,
                 config_.adaptive.default_confidence_level);
+            auto t1 = std::chrono::steady_clock::now();
+            double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
 
             emit_event(EventType::ProbabilisticSafetyCheck, result.reason,
                        agent_id, resource_type, std::nullopt, quantity,
-                       result.is_safe);
+                       result.is_safe, dur_us);
 
             if (result.is_safe) {
                 res.allocate(quantity);
@@ -840,9 +874,16 @@ RequestStatus ResourceManager::request_resources_adaptive(
 
             if (res_it->second.available() >= quantity) {
                 auto input = build_adaptive_safety_input(config_.adaptive.default_confidence_level);
+                auto t0 = std::chrono::steady_clock::now();
                 auto result = safety_checker_.check_hypothetical_probabilistic(
                     input, agent_id, resource_type, quantity,
                     config_.adaptive.default_confidence_level);
+                auto t1 = std::chrono::steady_clock::now();
+                double dur_us = std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+                emit_event(EventType::ProbabilisticSafetyCheck, result.reason,
+                           agent_id, resource_type, std::nullopt, quantity,
+                           result.is_safe, dur_us);
 
                 if (result.is_safe) {
                     res_it->second.allocate(quantity);
@@ -951,7 +992,8 @@ void ResourceManager::emit_event(EventType type, const std::string& message,
                                    std::optional<ResourceTypeId> resource_type,
                                    std::optional<RequestId> request_id,
                                    std::optional<ResourceQuantity> quantity,
-                                   std::optional<bool> safety_result) {
+                                   std::optional<bool> safety_result,
+                                   std::optional<double> duration_us) {
     if (!monitor_) return;
 
     MonitorEvent event;
@@ -963,6 +1005,7 @@ void ResourceManager::emit_event(EventType type, const std::string& message,
     event.request_id = request_id;
     event.quantity = quantity;
     event.safety_result = safety_result;
+    event.duration_us = duration_us;
 
     monitor_->on_event(event);
 }
